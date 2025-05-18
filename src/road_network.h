@@ -3,6 +3,8 @@
 #define NDEBUG
 #define NPROFILE
 #define CHECK_CONSISTENT //assert(is_consistent())
+#define PRUNING
+#define OUTPUT_TREE
 // algorithm config
 //#define NO_SHORTCUTS // turns off shortcut computation, resulting in smaller indexes but slower local queries
 #ifndef NO_SHORTCUTS
@@ -24,6 +26,7 @@
 #include <vector>
 #include <ostream>
 #include <cassert>
+#include <fstream>
 
 namespace road_network {
 
@@ -42,6 +45,10 @@ struct CutIndex
 {
     uint64_t partition; // partition at level k is stored in k-lowest bit
     uint8_t cut_level; // level in the partition tree where vertex becomes cut-vertex (0=root, up to 58)
+#ifdef OUTPUT_TREE
+        bool in_tree=false;
+        uint32_t node_local_index;
+#endif
     std::vector<uint16_t> dist_index; // sum of cut-sizes up to level k (indices into distances)
     std::vector<distance_t> distances; // distance to cut vertices of all levels, up to (excluding) the point where vertex becomes cut vertex
 #ifdef PRUNING
@@ -190,6 +197,7 @@ public:
     void write(std::ostream& os) const;
     // write index in json format
     void write_json(std::ostream& os) const;
+    void write_json_v2(std::ostream& os) const;
 };
 
 //--------------------------- Graph ---------------------------------
@@ -378,7 +386,19 @@ class Graph
     std::vector<std::pair<distance_t,distance_t>> distances() const;
     // return internal flow values as vector
     std::vector<std::pair<NodeID,NodeID>> flow() const;
+
+
 public:
+#ifdef OUTPUT_TREE
+    const char* tree_file_name ="hierarchical_tree.hl";
+    struct tree_node{
+        uint8_t cut_level;
+        uint64_t partition;
+        std::vector<NodeID> nodes;
+    };
+    std::ofstream  tree_file;
+    //void output_tree(std::vector<CutIndex> &ci);
+#endif
     // turn progress tracking on/off
     static void show_progress(bool state);
     // number of nodes in the top-level graph

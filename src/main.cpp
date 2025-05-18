@@ -13,7 +13,7 @@ using namespace road_network;
 #define REMOVE_REDUNDANT
 #define CONTRACT
 
-const size_t repeats = 10;
+const size_t repeats = 1;
 const size_t nr_queries = 1000000;
 const size_t nr_query_tests = 10;
 const size_t nr_buckets = 10;
@@ -93,6 +93,31 @@ size_t get_tail_pruning(const vector<CutIndex> &ci)
     return total;
 }
 #endif
+
+void output_random_queries(std::string& filename,vector<pair<NodeID,NodeID>>& queries){
+    ofstream query_file;
+    query_file.open (filename, ios::out | ios::app );
+    query_file<<queries.size()<<std::endl;
+    for(auto st : queries){
+        query_file<<st.first<<" "<<st.second<<std::endl;
+    }
+    query_file.close();
+}
+
+void output_generated_distance_queries(std::string& filename, vector<vector<pair<NodeID,NodeID>>>& query_buckets){
+    ofstream query_file;
+    query_file.open (filename, ios::out | ios::app );
+    query_file<<query_buckets.size()<<std::endl;
+    for(size_t i=0; i<query_buckets.size();i++){
+        auto& bucket = query_buckets[i];
+        query_file<<i<<" "<<bucket.size()<<std::endl;
+        for(auto st : bucket){
+            query_file<<st.first<<" "<<st.second<<std::endl;
+        }
+    }
+    query_file.close();
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -229,6 +254,12 @@ int main(int argc, char *argv[])
             vector<pair<NodeID,NodeID>> queries;
             for (size_t i = 0; i < nr_queries; i++)
                 queries.push_back(g.random_pair());
+            //output queries as needed
+            bool output_flag=true;
+            if(output_flag){
+                std::string query_file_name="/scratch1/zhou822/shortest_distance_queries/USA_queries.txt";
+                output_random_queries(query_file_name,queries);
+            }
             util::start_timer();
             for (pair<NodeID,NodeID> q : queries)
                 con_index.get_distance(q.first, q.second);
@@ -256,6 +287,11 @@ int main(int argc, char *argv[])
                 util::start_timer();
                 g.random_pairs(query_buckets, bucket_min, bucket_size, con_index);
                 cout << " in " << util::stop_timer() << "s" << endl;
+                if(output_flag){
+                    //output bucket queries
+                    std::string query_bucket_file_name="/scratch1/zhou822/shortest_distance_queries/USA_bucket_queries.txt";
+                    output_generated_distance_queries(query_bucket_file_name,query_buckets);
+                }
                 for (size_t bucket = 0; bucket < query_buckets.size(); bucket++)
                 {
                     util::start_timer();

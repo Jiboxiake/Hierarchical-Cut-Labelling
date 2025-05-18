@@ -2,7 +2,7 @@
 #include "util.h"
 
 #include <iostream>
-
+#include <fstream>
 using namespace std;
 using namespace road_network;
 
@@ -16,7 +16,11 @@ int main()
 #endif
     // read index
     util::start_timer();
-    ContractionIndex con_index(std::cin);
+    ifstream index_file_in;
+    index_file_in.open("NY_Label.hl", ios::in);
+    //ContractionIndex con_index(std::cin);
+    ContractionIndex con_index(index_file_in);
+    index_file_in.close();
     double read_index_time = util::stop_timer();
     cout << "read index in " << read_index_time << "s (" << con_index.size() / MB << " MB)" << endl;
     // test query speed

@@ -14,6 +14,7 @@
 #include <cstring>
 #include <random>
 
+
 using namespace std;
 
 #define DEBUG(X) //cerr << X << endl
@@ -797,6 +798,30 @@ void ContractionIndex::write_json(std::ostream& os) const
     set_list_format(lf);
 }
 
+void ContractionIndex::write_json_v2(std::ostream& os) const
+{
+        ListFormat lf = get_list_format();
+        set_list_format(ListFormat::plain);
+        // print json
+        os << '{' << endl;
+        for (NodeID node = 1; node < labels.size(); node++)
+        {
+            os << node << ":";
+            ContractionLabel cl = labels[node];
+            if (cl.distance_offset == 0)
+            {
+                os <<*(cl.cut_index.partition_bitvector())<<",";
+                os << cl.cut_index.unflatten();
+            }
+            else
+                os << "{\"p\":" << cl.parent << ",\"d\":" << cl.distance_offset << "}";
+            os << (node == labels.size() - 1 ? "" : ",") << endl;
+        }
+        os << '}' << endl;
+        // reset formatting
+        set_list_format(lf);
+}
+
 ContractionIndex::ContractionIndex(istream& is)
 {
     // read index data
@@ -946,6 +971,7 @@ Graph::Graph(size_t node_count)
     node_data.clear();
     resize(node_count);
     CHECK_CONSISTENT;
+
 }
 
 Graph::Graph(size_t node_count, const vector<Edge> &edges) : Graph(node_count)
@@ -2422,6 +2448,10 @@ void Graph::extend_cut_index(vector<CutIndex> &ci, double balance, uint8_t cut_l
             ci[node].cut_level = cut_level;
             ci[node].distances.push_back(0);
             ci[node].dist_index.push_back(ci[node].distances.size());
+#ifdef OUTPUT_TREE
+            ci[node].node_local_index=0;
+            ci[node].in_tree=true;
+#endif
             assert(ci[node].is_consistent());
             return;
         }
@@ -2543,6 +2573,16 @@ void Graph::extend_cut_index(vector<CutIndex> &ci, double balance, uint8_t cut_l
     for (NodeID node : p.right)
         ci[node].partition |= (static_cast<uint64_t>(1) << cut_level);
     DEBUG("cut index extended to " << ci);
+#ifdef OUTPUT_TREE
+    for(uint64_t i=0; i<p.cut.size();i++){
+        ci[p.cut.at(i)].in_tree = true;
+        ci[p.cut.at(i)].node_local_index=i;
+    }
+    //output to tree_file
+    /*tree_file<<cut_level<<",";
+    tree_file<<ci[p.cut.at(0)].partition<<",";
+    tree_file<<p.cut<<std::endl;*/
+#endif
 #ifdef PRUNING
     // prune trailing labels
     for (NodeID node : nodes)
@@ -2601,7 +2641,20 @@ size_t Graph::create_cut_index(std::vector<CutIndex> &ci, double balance)
         ci[node].dist_index.reserve(32);
         ci[node].distances.reserve(label_reserve);
     }
+#ifdef OUTPUT_TREE
+    //tree_file.open(tree_file_name,ios::out | ios::app);
+#endif
     extend_cut_index(ci, balance, 0);
+#ifdef OUTPUT_TREE
+    tree_file.open(tree_file_name,ios::out | ios::app);
+    for(NodeID node = 1; node < ci.size(); node++){
+        auto& entry = ci[node];
+        if(entry.in_tree){
+            tree_file<<node<<","<<static_cast<uint32_t>(entry.cut_level)<<","<<entry.partition<<","<<entry.node_local_index<<","<<entry.dist_index<<","<<entry.distances<<"\r\n";
+        }
+    }
+    tree_file.close();
+#endif
     log_progress(0);
 #ifdef CONTRACT2D
     deg2paths.clear();
@@ -2627,6 +2680,16 @@ size_t Graph::create_cut_index(std::vector<CutIndex> &ci, double balance)
 #endif
     return shortcuts / 2;
 }
+
+/*#ifdef OUTPUT_TREE
+    void Graph::output_tree(std::vector<CutIndex> &ci) {
+        std::ofstream  tree_file;
+        tree_file.open(tree_file_name,ios::out | ios::app );
+        for(uint64_t i=0; i<ci.size();i++){
+
+        }
+    }
+#endif*/
 
 void Graph::get_redundant_edges(std::vector<Edge> &edges)
 {
