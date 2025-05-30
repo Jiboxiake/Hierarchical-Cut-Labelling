@@ -1,5 +1,5 @@
 CC = g++ -std=c++20 -O3 -Wall -Wextra -o
-TCC = g++ -std=c++20 -ggdb -Wall -Wextra -o
+TCC = g++ -std=c++20 -ggdb -Wall -Wextra -o 
 INC = src/road_network.cpp src/util.cpp
 
 default: main

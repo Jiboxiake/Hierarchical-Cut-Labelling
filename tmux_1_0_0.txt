@@ -1,0 +1,1333 @@
+bigdata1 51 $ uran.sh                                 
+-bash: uran.sh: command not found                     
+bigdata1 52 $ urban.sh                                
+Running on /scratch1/zhou822/urban_road_sources/Abidjan/Abidjan_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Abidjan/Abidjan_Edgelist.csv                               
+largest component has 32375 nodes and 91286 edges     
+read 32375 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.21885s        
+-----------------------------                         
+maximum memory used: 40 MB                            
+UE index size is 11.4643 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 32375, no. of edges = 122482                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Abidjan_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Ahmedabad/Ahmedabad_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Ahmedabad/Ahmedabad_Edgelist.csv                           
+largest component has 12747 nodes and 36492 edges     
+read 12747 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.153511s       
+-----------------------------                         
+maximum memory used: 20 MB                            
+UE index size is 4.80713 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 12747, no. of edges = 65417                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Ahmedabad_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Ankara/Ankara_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Ankara/Ankara_Edgelist.csv                                 
+largest component has 74593 nodes and 220464 edges    
+read 74593 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 1.37994s        
+-----------------------------                         
+maximum memory used: 106 MB                           
+UE index size is 28.8169 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 74593, no. of edges = 411985                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Ankara_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Atlanta/Atlanta_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Atlanta/Atlanta_Edgelist.csv                               
+largest component has 310568 nodes and 754958 edges   
+read 310568 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 3.48126s        
+-----------------------------                         
+maximum memory used: 326 MB                           
+UE index size is 100.809 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 310568, no. of edges = 857386                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Atlanta_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Baghdad/Baghdad_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Baghdad/Baghdad_Edgelist.csv                               
+largest component has 59394 nodes and 176634 edges    
+read 59394 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.61665s        
+-----------------------------                         
+maximum memory used: 78 MB                            
+UE index size is 22.1949 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 59394, no. of edges = 277561                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Baghdad_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Bangdung/Bangdung_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Bangdung/Bangdung_Edgelist.csv                             
+largest component has 19597 nodes and 51424 edges     
+read 19597 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.110201s       
+-----------------------------                         
+maximum memory used: 24 MB                            
+UE index size is 6.60476 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 19597, no. of edges = 60963                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Bangdung_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Bangkok/Bangkok_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Bangkok/Bangkok_Edgelist.csv                               
+largest component has 150228 nodes and 370810 edges   
+read 150228 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.48408s        
+-----------------------------                         
+maximum memory used: 162 MB                           
+UE index size is 49.2582 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 150228, no. of edges = 427856                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Bangkok_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Barcelona/Barcelona_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Barcelona/Barcelona_Edgelist.csv                           
+largest component has 207317 nodes and 587266 edges   
+read 207317 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.4116s         
+-----------------------------                         
+maximum memory used: 288 MB                           
+UE index size is 79.3269 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 207317, no. of edges = 1155830                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Barcelona_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Beijing/Beijing_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Beijing/Beijing_Edgelist.csv                               
+largest component has 74383 nodes and 209244 edges    
+read 74383 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 5.18751s        
+-----------------------------                         
+maximum memory used: 119 MB                           
+UE index size is 30.0233 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 74383, no. of edges = 514248                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Beijing_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/BeloHorizonte/BeloHorizonte_Edgelist.csv                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/BeloHorizonte/BeloHorizonte_Edgelist.csv                   
+largest component has 62192 nodes and 186786 edges    
+read 62192 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 1.40407s        
+-----------------------------                         
+maximum memory used: 90 MB                            
+UE index size is 24.4005 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 62192, no. of edges = 360056                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/BeloHorizonte_Edgelist.csv_preprocessing.txt 
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Bengaluru/Bengaluru_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Bengaluru/Bengaluru_Edgelist.csv                           
+largest component has 149028 nodes and 396726 edges   
+read 149028 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.96463s        
+-----------------------------                         
+maximum memory used: 177 MB                           
+UE index size is 52.1882 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 149028, no. of edges = 573541                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Bengaluru_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Bogota/Bogota_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Bogota/Bogota_Edgelist.csv                                 
+largest component has 137905 nodes and 391686 edges   
+read 137905 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 3.09764s        
+-----------------------------                         
+maximum memory used: 187 MB                           
+UE index size is 51.4205 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 137905, no. of edges = 677961                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Bogota_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Boston/Boston_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Boston/Boston_Edgelist.csv                                 
+largest component has 350858 nodes and 919104 edges   
+read 350858 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 4.28078s        
+-----------------------------                         
+maximum memory used: 398 MB                           
+UE index size is 119.818 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 350858, no. of edges = 1209327                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Boston_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/BuenosAires/BuenosAires_Edgelist.csv                        
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/BuenosAires/BuenosAires_Edgelist.csv                       
+largest component has 263783 nodes and 864408 edges   
+read 263783 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 16.7674s        
+-----------------------------                         
+maximum memory used: 481 MB                           
+UE index size is 119.223 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 263783, no. of edges = 2367310                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/BuenosAires_Edgelist.csv_preprocessing.txt   
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Calcutta/Calcutta_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Calcutta/Calcutta_Edgelist.csv                             
+largest component has 70331 nodes and 178920 edges    
+read 70331 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.552934s       
+-----------------------------                         
+maximum memory used: 82 MB                            
+UE index size is 23.9166 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 70331, no. of edges = 242540                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Calcutta_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Chengdu/Chengdu_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Chengdu/Chengdu_Edgelist.csv                               
+largest component has 17567 nodes and 50916 edges     
+read 17567 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.307833s       
+-----------------------------                         
+maximum memory used: 27 MB                            
+UE index size is 6.7371 MB                            
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 17567, no. of edges = 95873                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Chengdu_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Chennai/Chennai_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Chennai/Chennai_Edgelist.csv                               
+largest component has 53797 nodes and 148322 edges    
+read 53797 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.511852s       
+-----------------------------                         
+maximum memory used: 67 MB                            
+UE index size is 19.0997 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 53797, no. of edges = 216932                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Chennai_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Chicago/Chicago_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Chicago/Chicago_Edgelist.csv                               
+largest component has 386533 nodes and 1115222 edges  
+read 386533 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 12.7112s        
+-----------------------------                         
+maximum memory used: 523 MB                           
+UE index size is 146.33 MB                            
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 386533, no. of edges = 2018760                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Chicago_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Chongqing/Chongqing_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Chongqing/Chongqing_Edgelist.csv                           
+largest component has 20550 nodes and 52810 edges     
+read 20550 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.137332s       
+-----------------------------                         
+maximum memory used: 26 MB                            
+UE index size is 7.00816 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 20550, no. of edges = 71121                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Chongqing_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Dalian/Dalian_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Dalian/Dalian_Edgelist.csv                                 
+largest component has 12370 nodes and 34248 edges     
+read 12370 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.0699441s      
+-----------------------------                         
+maximum memory used: 17 MB                            
+UE index size is 4.32384 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 12370, no. of edges = 44518                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Dalian_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Dallas/Dallas_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Dallas/Dallas_Edgelist.csv                                 
+largest component has 405486 nodes and 1090788 edges  
+read 405486 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 12.9395s        
+-----------------------------                         
+maximum memory used: 513 MB                           
+UE index size is 147.136 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 405486, no. of edges = 1875347                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Dallas_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Delhi/Delhi_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Delhi/Delhi_Edgelist.csv                                   
+largest component has 52576 nodes and 150488 edges    
+read 52576 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.489965s       
+-----------------------------                         
+maximum memory used: 67 MB                            
+UE index size is 19.1104 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 52576, no. of edges = 224474                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Delhi_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Detroit/Detroit_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Detroit/Detroit_Edgelist.csv                               
+largest component has 274807 nodes and 764728 edges   
+read 274807 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 12.0784s        
+-----------------------------                         
+maximum memory used: 375 MB                           
+UE index size is 103.504 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 274807, no. of edges = 1460100                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Detroit_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Dhaka/Dhaka_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Dhaka/Dhaka_Edgelist.csv                                   
+largest component has 14689 nodes and 39096 edges     
+read 14689 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.0926702s      
+-----------------------------                         
+maximum memory used: 20 MB                            
+UE index size is 5.08712 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 14689, no. of edges = 52796                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Dhaka_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Dongguan/Dongguan_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Dongguan/Dongguan_Edgelist.csv                             
+largest component has 7658 nodes and 21164 edges      
+read 7658 urban vertices                              
+UE Initialization.                                    
+UE Finished. The Construction time is 0.053628s       
+-----------------------------                         
+maximum memory used: 12 MB                            
+UE index size is 2.73379 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 7658, no. of edges = 31018                                                   
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Dongguan_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Fuzhou/Fuzhou_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Fuzhou/Fuzhou_Edgelist.csv                                 
+largest component has 10629 nodes and 29072 edges     
+read 10629 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.0961542s      
+-----------------------------                         
+maximum memory used: 16 MB                            
+UE index size is 3.78549 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 10629, no. of edges = 43569                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Fuzhou_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+❌ CSV not found: /scratch1/zhou822/urban_road_sources/Guangzhou/Guangzhou_Edgelist.csv                     
+Running on /scratch1/zhou822/urban_road_sources/Hangzhou/Hangzhou_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Hangzhou/Hangzhou_Edgelist.csv                             
+largest component has 19911 nodes and 55930 edges     
+read 19911 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.318809s       
+-----------------------------                         
+maximum memory used: 29 MB                            
+UE index size is 7.43708 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 19911, no. of edges = 100488                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Hangzhou_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Harbin/Harbin_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Harbin/Harbin_Edgelist.csv                                 
+largest component has 10132 nodes and 28626 edges     
+read 10132 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.100117s       
+-----------------------------                         
+maximum memory used: 16 MB                            
+UE index size is 3.70273 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 10132, no. of edges = 45461                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Harbin_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+❌ CSV not found: /scratch1/zhou822/urban_road_sources/hcl_labels/hcl_labels_Edgelist.csv                   
+Running on /scratch1/zhou822/urban_road_sources/HoChiMinh/HoChiMinh_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/HoChiMinh/HoChiMinh_Edgelist.csv                           
+largest component has 75229 nodes and 205030 edges    
+read 75229 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.676721s       
+-----------------------------                         
+maximum memory used: 91 MB                            
+UE index size is 26.2859 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 75229, no. of edges = 275101                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/HoChiMinh_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Houston/Houston_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Houston/Houston_Edgelist.csv                               
+largest component has 476078 nodes and 1251780 edges  
+read 476078 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 12.2396s        
+-----------------------------                         
+maximum memory used: 554 MB                           
+UE index size is 165.982 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 476078, no. of edges = 1843478                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Houston_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Hyderabad/Hyderabad_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Hyderabad/Hyderabad_Edgelist.csv                           
+largest component has 127455 nodes and 340792 edges   
+read 127455 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.15894s        
+-----------------------------                         
+maximum memory used: 146 MB                           
+UE index size is 44.1573 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 127455, no. of edges = 456663                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Hyderabad_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Istambul/Istambul_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Istambul/Istambul_Edgelist.csv                             
+largest component has 131130 nodes and 380108 edges   
+read 131130 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 2.19548s        
+-----------------------------                         
+maximum memory used: 183 MB                           
+UE index size is 49.7961 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 131130, no. of edges = 684578                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Istambul_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Jacarta/Jacarta_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Jacarta/Jacarta_Edgelist.csv                               
+largest component has 73003 nodes and 205626 edges    
+read 73003 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.797775s       
+-----------------------------                         
+maximum memory used: 92 MB                            
+UE index size is 26.0539 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 73003, no. of edges = 290494                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Jacarta_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Johannesburg/Johannesburg_Edgelist.csv                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Johannesburg/Johannesburg_Edgelist.csv                     
+largest component has 187127 nodes and 529580 edges   
+read 187127 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 2.47339s        
+-----------------------------                         
+maximum memory used: 227 MB                           
+UE index size is 66.6956 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 187127, no. of edges = 740444                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Johannesburg_Edgelist.csv_preprocessing.txt  
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Karachi/Karachi_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Karachi/Karachi_Edgelist.csv                               
+largest component has 37142 nodes and 110260 edges    
+read 37142 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.389814s       
+-----------------------------                         
+maximum memory used: 52 MB                            
+UE index size is 14.0107 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 37142, no. of edges = 182194                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Karachi_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Lahore/Lahore_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Lahore/Lahore_Edgelist.csv                                 
+largest component has 27390 nodes and 81618 edges     
+read 27390 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.301431s       
+-----------------------------                         
+maximum memory used: 39 MB                            
+UE index size is 10.3393 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 27390, no. of edges = 134479                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Lahore_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Lima/Lima_Edgelist.csv                                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Lima/Lima_Edgelist.csv                                     
+largest component has 110232 nodes and 336742 edges   
+read 110232 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 2.27105s        
+-----------------------------                         
+maximum memory used: 157 MB                           
+UE index size is 43.2371 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 110232, no. of edges = 626511                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Lima_Edgelist.csv_preprocessing.txt          
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/London/London_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/London/London_Edgelist.csv                                 
+largest component has 285050 nodes and 749382 edges   
+read 285050 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.2184s         
+-----------------------------                         
+maximum memory used: 351 MB                           
+UE index size is 101.474 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 285050, no. of edges = 1227357                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/London_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/LosAngeles/LosAngeles_Edgelist.csv                          
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/LosAngeles/LosAngeles_Edgelist.csv                         
+largest component has 398609 nodes and 1090480 edges  
+read 398609 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 13.5709s        
+-----------------------------                         
+maximum memory used: 523 MB                           
+UE index size is 147.718 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 398609, no. of edges = 1991019                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/LosAngeles_Edgelist.csv_preprocessing.txt    
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Madrid/Madrid_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Madrid/Madrid_Edgelist.csv                                 
+largest component has 352759 nodes and 1014168 edges  
+read 352759 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 12.2456s        
+-----------------------------                         
+maximum memory used: 489 MB                           
+UE index size is 135.008 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 352759, no. of edges = 1934696                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Madrid_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Manila/Manila_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Manila/Manila_Edgelist.csv                                 
+largest component has 241055 nodes and 654056 edges   
+read 241055 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.5933s         
+-----------------------------                         
+maximum memory used: 257 MB                           
+UE index size is 81.0527 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 241055, no. of edges = 699629                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Manila_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Medellin/Medellin_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Medellin/Medellin_Edgelist.csv                             
+largest component has 22899 nodes and 65422 edges     
+read 22899 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.23666s        
+-----------------------------                         
+maximum memory used: 32 MB                            
+UE index size is 8.46814 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 22899, no. of edges = 107120                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Medellin_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Miami/Miami_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Miami/Miami_Edgelist.csv                                   
+largest component has 218937 nodes and 608152 edges   
+read 218937 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 3.36927s        
+-----------------------------                         
+maximum memory used: 267 MB                           
+UE index size is 78.3523 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 218937, no. of edges = 905110                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Miami_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Milan/Milan_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Milan/Milan_Edgelist.csv                                   
+largest component has 187537 nodes and 521100 edges   
+read 187537 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 4.87749s        
+-----------------------------                         
+maximum memory used: 246 MB                           
+UE index size is 69.3146 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 187537, no. of edges = 911799                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Milan_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Moscow/Moscow_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Moscow/Moscow_Edgelist.csv                                 
+largest component has 685091 nodes and 1868268 edges  
+read 685091 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 21.1218s        
+-----------------------------                         
+maximum memory used: 867 MB                           
+UE index size is 248.676 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 685091, no. of edges = 3108589                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Moscow_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Mumbai/Mumbai_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Mumbai/Mumbai_Edgelist.csv                                 
+largest component has 44908 nodes and 120516 edges    
+read 44908 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.269341s       
+-----------------------------                         
+maximum memory used: 53 MB                            
+UE index size is 15.357 MB                            
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 44908, no. of edges = 148743                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Mumbai_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Nanjing/Nanjing_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Nanjing/Nanjing_Edgelist.csv                               
+largest component has 20230 nodes and 58638 edges     
+read 20230 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.261045s       
+-----------------------------                         
+maximum memory used: 30 MB                            
+UE index size is 7.5156 MB                            
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 20230, no. of edges = 97328                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Nanjing_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Naples/Naples_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Naples/Naples_Edgelist.csv                                 
+largest component has 124591 nodes and 322508 edges   
+read 124591 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.11628s        
+-----------------------------                         
+maximum memory used: 140 MB                           
+UE index size is 42.4892 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 124591, no. of edges = 430360                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Naples_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/NewYork/NewYork_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/NewYork/NewYork_Edgelist.csv                               
+largest component has 334930 nodes and 914390 edges   
+read 334930 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 5.21944s        
+-----------------------------                         
+maximum memory used: 407 MB                           
+UE index size is 118.622 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 334930, no. of edges = 1359739                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/NewYork_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Paris/Paris_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Paris/Paris_Edgelist.csv                                   
+largest component has 461542 nodes and 1272526 edges  
+read 461542 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 35.527s         
+-----------------------------                         
+maximum memory used: 650 MB                           
+UE index size is 177.877 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 461542, no. of edges = 2714599                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Paris_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Philadelphia/Philadelphia_Edgelist.csv                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Philadelphia/Philadelphia_Edgelist.csv                     
+largest component has 281463 nodes and 778306 edges   
+read 281463 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.22114s        
+-----------------------------                         
+maximum memory used: 359 MB                           
+UE index size is 102.568 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 281463, no. of edges = 1291470                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Philadelphia_Edgelist.csv_preprocessing.txt  
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Phoenix/Phoenix_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Phoenix/Phoenix_Edgelist.csv                               
+largest component has 340613 nodes and 918634 edges   
+read 340613 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.38186s        
+-----------------------------                         
+maximum memory used: 403 MB                           
+UE index size is 119.234 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 340613, no. of edges = 1291490                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Phoenix_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/PortoAlegre/PortoAlegre_Edgelist.csv                        
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/PortoAlegre/PortoAlegre_Edgelist.csv                       
+largest component has 63751 nodes and 186466 edges    
+read 63751 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.871424s       
+-----------------------------                         
+maximum memory used: 86 MB                            
+UE index size is 24.0183 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 63751, no. of edges = 316582                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/PortoAlegre_Edgelist.csv_preprocessing.txt   
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Pune/Pune_Edgelist.csv                                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Pune/Pune_Edgelist.csv                                     
+largest component has 27815 nodes and 72406 edges     
+read 27815 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.173869s       
+-----------------------------                         
+maximum memory used: 33 MB                            
+UE index size is 9.42915 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 27815, no. of edges = 90904                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Pune_Edgelist.csv_preprocessing.txt          
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Qingdao/Qingdao_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Qingdao/Qingdao_Edgelist.csv                               
+largest component has 13235 nodes and 37704 edges     
+read 13235 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.097224s       
+-----------------------------                         
+maximum memory used: 19 MB                            
+UE index size is 4.75883 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 13235, no. of edges = 54572                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Qingdao_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Quanzhou/Quanzhou_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Quanzhou/Quanzhou_Edgelist.csv                             
+largest component has 5164 nodes and 14564 edges      
+read 5164 urban vertices                              
+UE Initialization.                                    
+UE Finished. The Construction time is 0.04302s        
+-----------------------------                         
+maximum memory used: 9 MB                             
+UE index size is 1.87702 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 5164, no. of edges = 22496                                                   
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Quanzhou_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Recife/Recife_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Recife/Recife_Edgelist.csv                                 
+largest component has 33295 nodes and 94844 edges     
+read 33295 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.266985s       
+-----------------------------                         
+maximum memory used: 44 MB                            
+UE index size is 12.0595 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 33295, no. of edges = 140273                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Recife_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/RiodeJaneiro/RiodeJaneiro_Edgelist.csv                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/RiodeJaneiro/RiodeJaneiro_Edgelist.csv                     
+largest component has 155666 nodes and 436618 edges   
+read 155666 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.8246s         
+-----------------------------                         
+maximum memory used: 195 MB                           
+UE index size is 56.0258 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 155666, no. of edges = 648701                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/RiodeJaneiro_Edgelist.csv_preprocessing.txt  
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Rome/Rome_Edgelist.csv                                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Rome/Rome_Edgelist.csv                                     
+largest component has 158546 nodes and 424900 edges   
+read 158546 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 2.08363s        
+-----------------------------                         
+maximum memory used: 190 MB                           
+UE index size is 55.4456 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 158546, no. of edges = 606571                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Rome_Edgelist.csv_preprocessing.txt          
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/SaintPetersburg/SaintPetersburg_Edgelist.csv                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/SaintPetersburg/SaintPetersburg_Edgelist.csv               
+largest component has 363070 nodes and 988180 edges   
+read 363070 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.16052s        
+-----------------------------                         
+maximum memory used: 445 MB                           
+UE index size is 129.696 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 363070, no. of edges = 1517809                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/SaintPetersburg_Edgelist.csv_preprocessing.txt                                                                                                           
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Salvador/Salvador_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Salvador/Salvador_Edgelist.csv                             
+largest component has 31650 nodes and 84618 edges     
+read 31650 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.174089s       
+-----------------------------                         
+maximum memory used: 37 MB                            
+UE index size is 10.7905 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 31650, no. of edges = 103070                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Salvador_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/SanFrancisco/SanFrancisco_Edgelist.csv                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/SanFrancisco/SanFrancisco_Edgelist.csv                     
+largest component has 348712 nodes and 946174 edges   
+read 348712 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.27286s        
+-----------------------------                         
+maximum memory used: 427 MB                           
+UE index size is 124.233 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 348712, no. of edges = 1451646                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/SanFrancisco_Edgelist.csv_preprocessing.txt  
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Santiago/Santiago_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Santiago/Santiago_Edgelist.csv                             
+largest component has 141505 nodes and 412480 edges   
+read 141505 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 4.41718s        
+-----------------------------                         
+maximum memory used: 203 MB                           
+UE index size is 55.0824 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 141505, no. of edges = 821930                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Santiago_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/SaoPaolo/SaoPaolo_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/SaoPaolo/SaoPaolo_Edgelist.csv                             
+largest component has 212540 nodes and 618894 edges   
+read 212540 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 9.14907s        
+-----------------------------                         
+maximum memory used: 310 MB                           
+UE index size is 83.9079 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 212540, no. of edges = 1302513                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/SaoPaolo_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Seoul/Seoul_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Seoul/Seoul_Edgelist.csv                                   
+largest component has 101982 nodes and 299392 edges   
+read 101982 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 2.21471s        
+-----------------------------                         
+maximum memory used: 142 MB                           
+UE index size is 39.1263 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 101982, no. of edges = 552037                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Seoul_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+❌ CSV not found: /scratch1/zhou822/urban_road_sources/Shanghai/Shanghai_Edgelist.csv                       
+Running on /scratch1/zhou822/urban_road_sources/Shenyang/Shenyang_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Shenyang/Shenyang_Edgelist.csv                             
+largest component has 12751 nodes and 37868 edges     
+read 12751 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.234944s       
+-----------------------------                         
+maximum memory used: 21 MB                            
+UE index size is 5.01211 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 12751, no. of edges = 75457                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Shenyang_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Shenzhen/Shenzhen_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Shenzhen/Shenzhen_Edgelist.csv                             
+largest component has 34201 nodes and 96546 edges     
+read 34201 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.44202s        
+-----------------------------                         
+maximum memory used: 47 MB                            
+UE index size is 12.5813 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 34201, no. of edges = 159173                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Shenzhen_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Surabaya/Surabaya_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Surabaya/Surabaya_Edgelist.csv                             
+largest component has 36140 nodes and 97220 edges     
+read 36140 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.193824s       
+-----------------------------                         
+maximum memory used: 43 MB                            
+UE index size is 12.2539 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 36140, no. of edges = 111746                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Surabaya_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Surat/Surat_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Surat/Surat_Edgelist.csv                                   
+largest component has 2508 nodes and 7236 edges       
+read 2508 urban vertices                              
+UE Initialization.                                    
+UE Finished. The Construction time is 0.0152662s      
+-----------------------------                         
+maximum memory used: 6 MB                             
+UE index size is 0.90884 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 2508, no. of edges = 10425                                                   
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Surat_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Suzhou/Suzhou_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Suzhou/Suzhou_Edgelist.csv                                 
+largest component has 43705 nodes and 119606 edges    
+read 43705 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.738147s       
+-----------------------------                         
+maximum memory used: 60 MB                            
+UE index size is 16.1441 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 43705, no. of edges = 213913                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Suzhou_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Taipei/Taipei_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Taipei/Taipei_Edgelist.csv                                 
+largest component has 121808 nodes and 347660 edges   
+read 121808 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 3.72143s        
+-----------------------------                         
+maximum memory used: 171 MB                           
+UE index size is 46.8692 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 121808, no. of edges = 686548                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Taipei_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Tehran/Tehran_Edgelist.csv                                  
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Tehran/Tehran_Edgelist.csv                                 
+largest component has 108096 nodes and 290476 edges   
+read 108096 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 1.72153s        
+-----------------------------                         
+maximum memory used: 136 MB                           
+UE index size is 38.9541 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 108096, no. of edges = 477492                                                
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Tehran_Edgelist.csv_preprocessing.txt        
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Tianjin/Tianjin_Edgelist.csv                                
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Tianjin/Tianjin_Edgelist.csv                               
+largest component has 31002 nodes and 85404 edges     
+read 31002 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.604242s       
+-----------------------------                         
+maximum memory used: 43 MB                            
+UE index size is 11.4937 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 31002, no. of edges = 153018                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Tianjin_Edgelist.csv_preprocessing.txt       
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Tokyo/Tokyo_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Tokyo/Tokyo_Edgelist.csv                                   
+largest component has 345185 nodes and 1014300 edges  
+read 345185 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 18.8013s        
+-----------------------------                         
+maximum memory used: 546 MB                           
+UE index size is 142.039 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 345185, no. of edges = 2459093                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Tokyo_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/WashingtonDC/WashingtonDC_Edgelist.csv                      
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/WashingtonDC/WashingtonDC_Edgelist.csv                     
+largest component has 486658 nodes and 1262000 edges  
+read 486658 urban vertices                            
+UE Initialization.                                    
+UE Finished. The Construction time is 6.45029s        
+-----------------------------                         
+maximum memory used: 523 MB                           
+UE index size is 162.985 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 486658, no. of edges = 1539796                                               
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/WashingtonDC_Edgelist.csv_preprocessing.txt  
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Wuhan/Wuhan_Edgelist.csv                                    
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Wuhan/Wuhan_Edgelist.csv                                   
+largest component has 21061 nodes and 59664 edges     
+read 21061 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.214753s       
+-----------------------------                         
+maximum memory used: 29 MB                            
+UE index size is 7.6873 MB                            
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 21061, no. of edges = 93748                                                  
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Wuhan_Edgelist.csv_preprocessing.txt         
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Xianyang/Xianyang_Edgelist.csv                              
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Xianyang/Xianyang_Edgelist.csv                             
+largest component has 26023 nodes and 73074 edges     
+read 26023 urban vertices                             
+UE Initialization.                                    
+UE Finished. The Construction time is 0.471845s       
+-----------------------------                         
+maximum memory used: 38 MB                            
+UE index size is 9.78635 MB                           
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 26023, no. of edges = 135253                                                 
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Xianyang_Edgelist.csv_preprocessing.txt      
+Preprocessing file written successfully.              
+Running on /scratch1/zhou822/urban_road_sources/Zhengzhou/Zhengzhou_Edgelist.csv                            
+-----------------------------                         
+Read Graph: /scratch1/zhou822/urban_road_sources/Zhengzhou/Zhengzhou_Edgelist.csv                           
+largest component has 8986 nodes and 25466 edges      
+read 8986 urban vertices                              
+UE Initialization.                                    
+UE Finished. The Construction time is 0.122271s       
+-----------------------------                         
+maximum memory used: 15 MB                            
+UE index size is 3.3853 MB                            
+Query Test.                                           
+Initialize Query Graph.                               
+UE Graph --- no. of vertices = 8986, no. of edges = 46257                                                   
+Initialization Finished.                              
+-----------------------------                         
+Preprocessing file: /scratch1/zhou822/UE_preprocessing_results/Zhengzhou_Edgelist.csv_preprocessing.txt     
+Preprocessing file written successfully.              
+bigdata1 53 $                                         

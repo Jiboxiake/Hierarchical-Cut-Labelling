@@ -13,7 +13,10 @@
 #include <atomic>
 #include <cstring>
 #include <random>
-
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <stack>
 
 using namespace std;
 
@@ -822,6 +825,25 @@ void ContractionIndex::write_json_v2(std::ostream& os) const
         set_list_format(lf);
 }
 
+ void ContractionIndex::print_some(uint32_t n){
+    for (NodeID node = 1; node < n; node++)
+        {
+            cout << node << ":";
+            ContractionLabel cl = labels[node];
+            if (cl.distance_offset == 0)
+            {
+                cout <<*(cl.cut_index.partition_bitvector())<<",";
+                cout << cl.cut_index.unflatten();
+            }
+            else
+            {
+                cout << "{\"p\":" << cl.parent << ",\"d\":" << cl.distance_offset << "}";
+                cout<<cl.cut_index.unflatten();
+            }
+            cout << (node == labels.size() - 1 ? "" : ",") << endl;
+        }
+ }
+
 ContractionIndex::ContractionIndex(istream& is)
 {
     // read index data
@@ -1382,6 +1404,7 @@ void Graph::run_dijkstra_llsub_par(const std::vector<NodeID> &vertices)
 #ifdef PRUNING
 void Graph::run_dijkstra_ll_par(const vector<NodeID> &vertices)
 {
+    //std::cout<<"verteex size: "<<vertices.size()<<std::endl;
     CHECK_CONSISTENT;
     vector<thread> threads;
     auto dijkstra = [this](NodeID v, size_t distance_id) {
@@ -2480,6 +2503,7 @@ void Graph::extend_cut_index(vector<CutIndex> &ci, double balance, uint8_t cut_l
     START_TIMER;
 #ifdef PRUNING
     sort_cut_for_pruning(p.cut, ci);
+    //std::cout<<"sort cut for pruning: ";
 #endif
     for (size_t c = 0; c < p.cut.size(); c++)
         node_data[p.cut[c]].landmark_level = p.cut.size() - c;
@@ -2501,6 +2525,7 @@ void Graph::extend_cut_index(vector<CutIndex> &ci, double balance, uint8_t cut_l
     if (nodes.size() > thread_threshold)
     {
         size_t next_offset;
+        
         for (size_t offset = 0; offset < p.cut.size(); offset = next_offset)
         {
             next_offset = min(offset + MULTI_THREAD_DISTANCES, p.cut.size());
@@ -2646,6 +2671,8 @@ size_t Graph::create_cut_index(std::vector<CutIndex> &ci, double balance)
 #endif
     extend_cut_index(ci, balance, 0);
 #ifdef OUTPUT_TREE
+    std::string tree_file_name;
+    tree_file_name.append();
     tree_file.open(tree_file_name,ios::out | ios::app);
     for(NodeID node = 1; node < ci.size(); node++){
         auto& entry = ci[node];
@@ -2653,6 +2680,7 @@ size_t Graph::create_cut_index(std::vector<CutIndex> &ci, double balance)
             tree_file<<node<<","<<static_cast<uint32_t>(entry.cut_level)<<","<<entry.partition<<","<<entry.node_local_index<<","<<entry.dist_index<<","<<entry.distances<<"\r\n";
         }
     }
+    
     tree_file.close();
 #endif
     log_progress(0);
@@ -2936,6 +2964,160 @@ void read_graph(Graph &g, istream &in)
         default:
             in.ignore(1000, '\n');
         }
+    }
+    g.remove_isolated();
+}
+
+void read_urban_graph(Graph &g, istream &in)
+{
+    std::string line;
+    uint32_t v, w, d;
+    std::getline(in, line);//skip the first line
+    std::vector<uint32_t> vs;
+    std::vector<uint32_t> ws;
+    std::vector<uint32_t> ds;
+    while (std::getline(in, line)) {
+        //std::cout<<line<<std::endl;
+        std::istringstream ss(line);
+        std::string xCoord, yCoord, startNode, endNode, edge, length;
+
+        if (!std::getline(ss, xCoord, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, yCoord, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, startNode, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, endNode, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, edge, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, length, ',')) throw std::runtime_error("error, input format");
+        v = (NodeID)std::stoi(startNode);
+        w = (NodeID)std::stoi(endNode);
+        d = static_cast<distance_t>(std::stod(length));
+        if(d==0)d=1;
+        //g.add_edge(v, w, d, true, true);
+        vs.emplace_back(v);
+        ws.emplace_back(w);
+        ds.emplace_back(d);
+    }
+    std::unordered_map<NodeID, std::vector<NodeID>> adj;
+    for (size_t i = 0; i < vs.size(); ++i) {
+        adj[vs[i]].push_back(ws[i]);
+        adj[ws[i]].push_back(vs[i]);
+    }
+    // Find all components
+    std::unordered_set<NodeID> visited;
+    std::vector<NodeID> largest_cc;
+    for (const auto& [node, _] : adj) {
+        if (visited.count(node)) continue;
+        std::vector<NodeID> cc;
+        std::stack<NodeID> stack;
+        stack.push(node);
+        visited.insert(node);
+        while (!stack.empty()) {
+            NodeID u = stack.top(); stack.pop();
+            cc.push_back(u);
+            for (NodeID v : adj[u]) {
+                if (!visited.count(v)) {
+                    visited.insert(v);
+                    stack.push(v);
+                }
+            }
+        }
+        if (cc.size() > largest_cc.size())
+            largest_cc = std::move(cc);
+    }
+    std::unordered_set<NodeID> in_largest(largest_cc.begin(), largest_cc.end());
+
+    // Filter edges to only those in the largest component
+    std::vector<uint32_t> vs2, ws2, ds2;
+    for (size_t i = 0; i < vs.size(); ++i) {
+        if (in_largest.count(vs[i]) && in_largest.count(ws[i])) {
+            vs2.push_back(vs[i]);
+            ws2.push_back(ws[i]);
+            ds2.push_back(ds[i]);
+        }
+    }
+    std::cout << "largest component has " << in_largest.size() << " nodes and " << vs2.size() << " edges" << std::endl;
+    vs.clear();
+    ws.clear();
+    ds.clear();
+    NodeID current_dense=1;
+    std::unordered_map<NodeID,NodeID> sparse_to_dense;
+    if(vs2.size()!=ws2.size()||ds2.size()!=ws2.size()){
+        throw std::runtime_error("error, wrong input");
+    }
+    for(size_t i=0; i<vs2.size();i++){
+        v = vs2[i];
+        w = ws2[i];
+        d = ds2[i];
+        if(sparse_to_dense.contains(v)){
+            v = sparse_to_dense[v];
+        }else{
+            sparse_to_dense[v]=current_dense;
+            v = current_dense;
+            current_dense++;
+        }
+        if(sparse_to_dense.contains(w)){
+            w = sparse_to_dense[w];
+        }else{
+            sparse_to_dense[w]=current_dense;
+            w = current_dense;
+            current_dense++;
+        }
+        //g.add_edge(v, w, d, true, true);
+        vs.emplace_back(v);
+        ws.emplace_back(w);
+        ds.emplace_back(d);
+    }
+    /*
+    //the graph is not dense, it is sparse, let's translate first
+    NodeID current_dense=1;
+    std::unordered_map<NodeID,NodeID> sparse_to_dense;
+    size_t count=0;
+    while (std::getline(in, line)) {
+        //std::cout<<line<<std::endl;
+        std::istringstream ss(line);
+        std::string xCoord, yCoord, startNode, endNode, edge, length;
+
+        if (!std::getline(ss, xCoord, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, yCoord, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, startNode, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, endNode, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, edge, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, length, ',')) throw std::runtime_error("error, input format");
+        v = (NodeID)std::stoi(startNode);
+        w = (NodeID)std::stoi(endNode);
+        if(sparse_to_dense.contains(v)){
+            v = sparse_to_dense[v];
+        }else{
+            sparse_to_dense[v]=current_dense;
+            v = current_dense;
+            current_dense++;
+        }
+        if(sparse_to_dense.contains(w)){
+            w = sparse_to_dense[w];
+        }else{
+            sparse_to_dense[w]=current_dense;
+            w = current_dense;
+            current_dense++;
+        }
+        d = static_cast<distance_t>(std::stod(length));
+        //g.add_edge(v, w, d, true, true);
+        vs.emplace_back(v);
+        ws.emplace_back(w);
+        ds.emplace_back(d);
+        count++;
+    }
+    std::cout<<"read "<<count<<" edges"<<std::endl;
+    g.resize(current_dense-1);
+    std::cout<<"read "<<current_dense-1<<" urban vertices"<<std::endl;*/
+    std::cout<<"read "<<current_dense-1<<" urban vertices"<<std::endl;
+    g.resize(current_dense-1);
+    if(vs.size()!=ws.size()||ds.size()!=ws.size()){
+        throw std::runtime_error("error, wrong input");
+    }
+    for(size_t i=0; i<vs.size();i++){
+        v = vs[i];
+        w = ws[i];
+        d = ds[i];
+        g.add_edge(v, w, d, true, true);
     }
     g.remove_isolated();
 }

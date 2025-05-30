@@ -4,7 +4,7 @@
 #define NPROFILE
 #define CHECK_CONSISTENT //assert(is_consistent())
 #define PRUNING
-#define OUTPUT_TREE
+//#define OUTPUT_TREE
 // algorithm config
 //#define NO_SHORTCUTS // turns off shortcut computation, resulting in smaller indexes but slower local queries
 #ifndef NO_SHORTCUTS
@@ -198,6 +198,7 @@ public:
     // write index in json format
     void write_json(std::ostream& os) const;
     void write_json_v2(std::ostream& os) const;
+    void print_some(uint32_t n);
 };
 
 //--------------------------- Graph ---------------------------------
@@ -390,7 +391,7 @@ class Graph
 
 public:
 #ifdef OUTPUT_TREE
-    const char* tree_file_name ="hierarchical_tree.hl";
+    //const char* tree_file_name ="hierarchical_tree.hl";
     struct tree_node{
         uint8_t cut_level;
         uint64_t partition;
@@ -460,5 +461,7 @@ public:
 void print_graph(const Graph &g, std::ostream &os);
 // read graph in DIMACS format
 void read_graph(Graph &g, std::istream &in);
+// read urban road network graph
+void read_urban_graph(Graph &g, std::istream &in);
 
 } // road_network

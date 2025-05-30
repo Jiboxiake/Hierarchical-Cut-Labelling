@@ -1,0 +1,1635 @@
+bigdata1 51 $ urban_road.sh                   
+Running on /scratch1/zhou822/urban_road_sources/Abidjan/Abidjan_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Abidjan/Abidjan_Edgelist.csv         
+largest component has 32375 nodes and 91286 edges                                            
+read 32375 urban vertices                     
+read 32375 vertices and 45304 edges (diameter=200|92763)                                     
+found 404 redundant edges in 0.00932865s      
+contracted to 26268 vertices (81%) and 39197 edges in 0.00358903s                            
+..                                            
+created index of size 8 MB in 0.27559s using 12380 shortcuts                                 
+#labels=1880607 (max 141), avg/max cut size=5.49/26, height=20                               
+partition tree contains 18227 non-empty cuts (69% of uncontracted vertices)                  
+3-HOP pruning could remove 649953 labels (29%)                                               
+2-HOP pruning could remove 516437 labels (23%)                                               
+tail pruning *has* removed 336107 labels (15%)                                               
+maximum memory used: 42 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Ahmedabad/Ahmedabad_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Ahmedabad/Ahmedabad_Edgelist.csv     
+largest component has 12747 nodes and 36492 edges                                            
+read 12747 urban vertices                     
+read 12747 vertices and 18117 edges (diameter=129|130805)                                    
+found 178 redundant edges in 0.00623809s      
+contracted to 10788 vertices (84%) and 16158 edges in 0.00137551s                            
+.                                             
+created index of size 4 MB in 0.168884s using 7040 shortcuts                                 
+#labels=1154350 (max 165), avg/max cut size=9.49/49, height=18                               
+partition tree contains 7075 non-empty cuts (65% of uncontracted vertices)                   
+3-HOP pruning could remove 569227 labels (42%)                                               
+2-HOP pruning could remove 453731 labels (33%)                                               
+tail pruning *has* removed 197228 labels (14%)                                               
+maximum memory used: 19 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Ankara/Ankara_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Ankara/Ankara_Edgelist.csv           
+largest component has 74593 nodes and 220464 edges                                           
+read 74593 urban vertices                     
+read 74593 vertices and 109493 edges (diameter=196|151121)                                   
+found 1190 redundant edges in 0.0261487s      
+contracted to 66213 vertices (88%) and 101113 edges in 0.00921648s                           
+..............                                
+created index of size 53 MB in 1.9968s using 41881 shortcuts                                 
+#labels=12983773 (max 348), avg/max cut size=13.9/58, height=22                              
+partition tree contains 42966 non-empty cuts (64% of uncontracted vertices)                  
+3-HOP pruning could remove 6073272 labels (40%)                                              
+2-HOP pruning could remove 4700958 labels (31%)                                              
+tail pruning *has* removed 1863951 labels (12%)                                              
+maximum memory used: 122 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Atlanta/Atlanta_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Atlanta/Atlanta_Edgelist.csv         
+largest component has 310568 nodes and 754958 edges                                          
+read 310568 urban vertices                    
+read 310568 vertices and 370847 edges (diameter=392|234112)                                  
+found 4221 redundant edges in 0.0795383s      
+contracted to 179491 vertices (57%) and 239770 edges in 0.116561s                            
+................................................................                             
+created index of size 223 MB in 13.1089s using 158604 shortcuts                              
+#labels=55398246 (max 753), avg/max cut size=18.8/120, height=27                             
+partition tree contains 131021 non-empty cuts (72% of uncontracted vertices)                 
+3-HOP pruning could remove 28083380 labels (43%)                                             
+2-HOP pruning could remove 21269998 labels (33%)                                             
+tail pruning *has* removed 8493612 labels (13%)                                              
+maximum memory used: 599 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Baghdad/Baghdad_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Baghdad/Baghdad_Edgelist.csv         
+largest component has 59394 nodes and 176634 edges                                           
+read 59394 urban vertices                     
+read 59394 vertices and 88077 edges (diameter=134|296168)                                    
+found 365 redundant edges in 0.0720407s       
+contracted to 55050 vertices (92%) and 83733 edges in 0.0063843s                             
+........                                      
+created index of size 30 MB in 1.05495s using 30567 shortcuts                                
+#labels=7299653 (max 247), avg/max cut size=9.61/48, height=23                               
+partition tree contains 36667 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 3435586 labels (39%)                                              
+2-HOP pruning could remove 2760824 labels (31%)                                              
+tail pruning *has* removed 1402861 labels (16%)                                              
+maximum memory used: 83 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Bangdung/Bangdung_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Bangdung/Bangdung_Edgelist.csv       
+largest component has 19597 nodes and 51424 edges                                            
+read 19597 urban vertices                     
+read 19597 vertices and 25484 edges (diameter=134|100553)                                    
+found 261 redundant edges in 0.005861s        
+contracted to 14894 vertices (76%) and 20781 edges in 0.00243698s                            
+.                                             
+created index of size 5 MB in 0.208016s using 6963 shortcuts                                 
+#labels=1266877 (max 160), avg/max cut size=6.88/29, height=19                               
+partition tree contains 10957 non-empty cuts (73% of uncontracted vertices)                  
+3-HOP pruning could remove 474808 labels (32%)                                               
+2-HOP pruning could remove 348402 labels (23%)                                               
+tail pruning *has* removed 202618 labels (13%)                                               
+maximum memory used: 26 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Bangkok/Bangkok_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Bangkok/Bangkok_Edgelist.csv         
+largest component has 150228 nodes and 370810 edges                                          
+read 150228 urban vertices                    
+read 150228 vertices and 183834 edges (diameter=240|170173)                                  
+found 2079 redundant edges in 0.0614052s      
+contracted to 94784 vertices (63%) and 128390 edges in 0.051084s                             
+........................                      
+created index of size 87 MB in 4.4783s using 60189 shortcuts                                 
+#labels=21234650 (max 451), avg/max cut size=14.5/77, height=27                              
+partition tree contains 70340 non-empty cuts (74% of uncontracted vertices)                  
+3-HOP pruning could remove 10730350 labels (43%)                                             
+2-HOP pruning could remove 8045233 labels (32%)                                              
+tail pruning *has* removed 3494864 labels (14%)                                              
+maximum memory used: 201 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Barcelona/Barcelona_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Barcelona/Barcelona_Edgelist.csv     
+largest component has 207317 nodes and 587266 edges                                          
+read 207317 urban vertices                    
+read 207317 vertices and 289693 edges (diameter=367|149526)                                  
+found 3843 redundant edges in 0.0855342s      
+contracted to 177135 vertices (85%) and 259511 edges in 0.0339485s                           
+..........................................................                                   
+created index of size 205 MB in 10.4048s using 134194 shortcuts                              
+#labels=51065294 (max 558), avg/max cut size=18.2/76, height=25                              
+partition tree contains 117976 non-empty cuts (66% of uncontracted vertices)                 
+3-HOP pruning could remove 21881339 labels (37%)                                             
+2-HOP pruning could remove 17560252 labels (30%)                                             
+tail pruning *has* removed 7009372 labels (12%)                                              
+maximum memory used: 479 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Beijing/Beijing_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Beijing/Beijing_Edgelist.csv         
+largest component has 74383 nodes and 209244 edges                                           
+read 74383 urban vertices                     
+read 74383 vertices and 103447 edges (diameter=241|294375)                                   
+found 1379 redundant edges in 0.0316924s      
+contracted to 62173 vertices (83%) and 91237 edges in 0.0108332s                             
+.........................                     
+created index of size 88 MB in 4.0918s using 74491 shortcuts                                 
+#labels=22161322 (max 782), avg/max cut size=25.3/112, height=26                             
+partition tree contains 39737 non-empty cuts (63% of uncontracted vertices)                  
+3-HOP pruning could remove 10929285 labels (43%)                                             
+2-HOP pruning could remove 8469381 labels (33%)                                              
+tail pruning *has* removed 2999883 labels (11%)                                              
+maximum memory used: 248 MB                   
+Running on /scratch1/zhou822/urban_road_sources/BeloHorizonte/BeloHorizonte_Edgelist.csv     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/BeloHorizonte/BeloHorizonte_Edgelist.csv                                                                                          
+largest component has 62192 nodes and 186786 edges                                           
+read 62192 urban vertices                     
+read 62192 vertices and 92997 edges (diameter=245|91917)                                     
+found 577 redundant edges in 0.0195294s       
+contracted to 55445 vertices (89%) and 86250 edges in 0.00604309s                            
+............                                  
+created index of size 44 MB in 1.70902s using 40382 shortcuts                                
+#labels=10728854 (max 473), avg/max cut size=13.8/65, height=21                              
+partition tree contains 35871 non-empty cuts (64% of uncontracted vertices)                  
+3-HOP pruning could remove 5076302 labels (41%)                                              
+2-HOP pruning could remove 4111208 labels (33%)                                              
+tail pruning *has* removed 1495473 labels (12%)                                              
+maximum memory used: 117 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Bengaluru/Bengaluru_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Bengaluru/Bengaluru_Edgelist.csv     
+largest component has 149028 nodes and 396726 edges                                          
+read 149028 urban vertices                    
+read 149028 vertices and 197019 edges (diameter=254|307140)                                  
+found 2155 redundant edges in 0.049452s       
+contracted to 111240 vertices (74%) and 159231 edges in 0.0291658s                           
+.................................             
+created index of size 117 MB in 6.24279s using 70434 shortcuts                               
+#labels=28942156 (max 587), avg/max cut size=16.8/77, height=25                              
+partition tree contains 77979 non-empty cuts (70% of uncontracted vertices)                  
+3-HOP pruning could remove 13992538 labels (42%)                                             
+2-HOP pruning could remove 11145586 labels (33%)                                             
+tail pruning *has* removed 4200420 labels (12%)                                              
+maximum memory used: 294 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Bogota/Bogota_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Bogota/Bogota_Edgelist.csv           
+largest component has 137905 nodes and 391686 edges                                          
+read 137905 urban vertices                    
+read 137905 vertices and 194373 edges (diameter=379|520812)                                  
+found 1044 redundant edges in 0.0557069s      
+contracted to 111836 vertices (81%) and 168304 edges in 0.0256923s                           
+.........................                     
+created index of size 92 MB in 3.75393s using 70873 shortcuts                                
+#labels=22409471 (max 427), avg/max cut size=12.7/61, height=23                              
+partition tree contains 75210 non-empty cuts (67% of uncontracted vertices)                  
+3-HOP pruning could remove 9845754 labels (38%)                                              
+2-HOP pruning could remove 7845885 labels (30%)                                              
+tail pruning *has* removed 3348537 labels (12%)                                              
+maximum memory used: 240 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Boston/Boston_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Boston/Boston_Edgelist.csv           
+largest component has 350858 nodes and 919104 edges                                          
+read 350858 urban vertices                    
+read 350858 vertices and 451459 edges (diameter=535|203341)                                  
+found 6163 redundant edges in 0.097705s       
+contracted to 259425 vertices (73%) and 360026 edges in 0.0967133s                           
+.........................................................................................    
+created index of size 308 MB in 21.7717s using 178500 shortcuts                              
+#labels=76499041 (max 956), avg/max cut size=17.5/205, height=27                             
+partition tree contains 186066 non-empty cuts (71% of uncontracted vertices)                 
+3-HOP pruning could remove 37882279 labels (42%)                                             
+2-HOP pruning could remove 30298831 labels (33%)                                             
+tail pruning *has* removed 13276366 labels (14%)                                             
+maximum memory used: 773 MB                   
+Running on /scratch1/zhou822/urban_road_sources/BuenosAires/BuenosAires_Edgelist.csv         
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/BuenosAires/BuenosAires_Edgelist.csv 
+largest component has 263783 nodes and 864408 edges                                          
+read 263783 urban vertices                    
+read 263783 vertices and 430213 edges (diameter=318|206464)                                  
+found 1338 redundant edges in 0.0747628s      
+contracted to 242904 vertices (92%) and 409334 edges in 0.0499559s                           
+................................................................................................................                                                                          
+created index of size 387 MB in 17.9155s using 271043 shortcuts                              
+#labels=97735554 (max 1496), avg/max cut size=25.9/409, height=26                            
+partition tree contains 144199 non-empty cuts (59% of uncontracted vertices)                 
+3-HOP pruning could remove 54141129 labels (48%)                                             
+2-HOP pruning could remove 43894589 labels (39%)                                             
+tail pruning *has* removed 14347664 labels (12%)                                             
+maximum memory used: 1068 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Calcutta/Calcutta_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Calcutta/Calcutta_Edgelist.csv       
+largest component has 70331 nodes and 178920 edges                                           
+read 70331 urban vertices                     
+read 70331 vertices and 88873 edges (diameter=303|135581)                                    
+found 985 redundant edges in 0.0167862s       
+contracted to 49569 vertices (70%) and 68111 edges in 0.00885894s                            
+......                                        
+created index of size 24 MB in 0.684381s using 25011 shortcuts                               
+#labels=5566230 (max 229), avg/max cut size=8.01/38, height=21                               
+partition tree contains 34974 non-empty cuts (70% of uncontracted vertices)                  
+3-HOP pruning could remove 2230215 labels (34%)                                              
+2-HOP pruning could remove 1774937 labels (27%)                                              
+tail pruning *has* removed 875108 labels (13%)                                               
+maximum memory used: 79 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Chengdu/Chengdu_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Chengdu/Chengdu_Edgelist.csv         
+largest component has 17567 nodes and 50916 edges                                            
+read 17567 urban vertices                     
+read 17567 vertices and 25295 edges (diameter=137|222802)                                    
+found 329 redundant edges in 0.0101092s       
+contracted to 15148 vertices (86%) and 22876 edges in 0.00177593s                            
+..                                            
+created index of size 8 MB in 0.304478s using 12496 shortcuts                                
+#labels=1980588 (max 263), avg/max cut size=11.1/35, height=18                               
+partition tree contains 9697 non-empty cuts (64% of uncontracted vertices)                   
+3-HOP pruning could remove 812764 labels (35%)                                               
+2-HOP pruning could remove 619418 labels (27%)                                               
+tail pruning *has* removed 296064 labels (13%)                                               
+maximum memory used: 26 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Chennai/Chennai_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Chennai/Chennai_Edgelist.csv         
+largest component has 53797 nodes and 148322 edges                                           
+read 53797 urban vertices                     
+read 53797 vertices and 72713 edges (diameter=227|114633)                                    
+found 722 redundant edges in 0.0169998s       
+contracted to 42765 vertices (79%) and 61681 edges in 0.00595721s                            
+........                                      
+created index of size 26 MB in 0.86046s using 25594 shortcuts                                
+#labels=6316937 (max 257), avg/max cut size=10.9/49, height=21                               
+partition tree contains 29289 non-empty cuts (68% of uncontracted vertices)                  
+3-HOP pruning could remove 2865583 labels (38%)                                              
+2-HOP pruning could remove 2210449 labels (29%)                                              
+tail pruning *has* removed 1059618 labels (14%)                                              
+maximum memory used: 67 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Chicago/Chicago_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Chicago/Chicago_Edgelist.csv         
+largest component has 386533 nodes and 1115222 edges                                         
+read 386533 urban vertices                    
+read 386533 vertices and 549635 edges (diameter=336|190987)                                  
+found 7885 redundant edges in 0.14423s        
+contracted to 321745 vertices (83%) and 484847 edges in 0.0815013s                           
+..................................................................................................................................................                                        
+created index of size 508 MB in 29.3734s using 277018 shortcuts                              
+#labels=128182823 (max 1100), avg/max cut size=24.1/164, height=28                           
+partition tree contains 213751 non-empty cuts (66% of uncontracted vertices)                 
+3-HOP pruning could remove 64320884 labels (44%)                                             
+2-HOP pruning could remove 51806809 labels (35%)                                             
+tail pruning *has* removed 17822319 labels (12%)                                             
+maximum memory used: 1337 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Chongqing/Chongqing_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Chongqing/Chongqing_Edgelist.csv     
+largest component has 20550 nodes and 52810 edges                                            
+read 20550 urban vertices                     
+read 20550 vertices and 26210 edges (diameter=439|830679)                                    
+found 259 redundant edges in 0.00868598s      
+contracted to 17173 vertices (83%) and 22833 edges in 0.00286677s                            
+.                                             
+created index of size 6 MB in 0.205182s using 8690 shortcuts                                 
+#labels=1399803 (max 155), avg/max cut size=6.43/33, height=19                               
+partition tree contains 12649 non-empty cuts (73% of uncontracted vertices)                  
+3-HOP pruning could remove 390743 labels (24%)                                               
+2-HOP pruning could remove 302872 labels (18%)                                               
+tail pruning *has* removed 210669 labels (13%)                                               
+maximum memory used: 29 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Dalian/Dalian_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Dalian/Dalian_Edgelist.csv           
+largest component has 12370 nodes and 34248 edges                                            
+read 12370 urban vertices                     
+read 12370 vertices and 16992 edges (diameter=186|280279)                                    
+found 209 redundant edges in 0.00499991s      
+contracted to 10186 vertices (82%) and 14808 edges in 0.00137397s                            
+created index of size 2 MB in 0.0739115s using 4725 shortcuts                                
+#labels=536836 (max 102), avg/max cut size=4.67/17, height=17                                
+partition tree contains 7251 non-empty cuts (71% of uncontracted vertices)                   
+3-HOP pruning could remove 158412 labels (25%)                                               
+2-HOP pruning could remove 122413 labels (19%)                                               
+tail pruning *has* removed 77322 labels (12%) 
+maximum memory used: 19 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Dallas/Dallas_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Dallas/Dallas_Edgelist.csv           
+largest component has 405486 nodes and 1090788 edges                                         
+read 405486 urban vertices                    
+read 405486 vertices and 537671 edges (diameter=527|301438)                                  
+found 5379 redundant edges in 0.138336s       
+contracted to 302635 vertices (74%) and 434820 edges in 0.146199s                            
+.........................................................................................................................................................                                 
+created index of size 529 MB in 30.8765s using 299599 shortcuts                              
+#labels=133811760 (max 962), avg/max cut size=25.8/249, height=28                            
+partition tree contains 204834 non-empty cuts (67% of uncontracted vertices)                 
+3-HOP pruning could remove 70337291 labels (45%)                                             
+2-HOP pruning could remove 55088105 labels (35%)                                             
+tail pruning *has* removed 19381033 labels (12%)                                             
+maximum memory used: 1543 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Delhi/Delhi_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Delhi/Delhi_Edgelist.csv             
+largest component has 52576 nodes and 150488 edges                                           
+read 52576 urban vertices                     
+read 52576 vertices and 74887 edges (diameter=201|65268)                                     
+found 812 redundant edges in 0.0213789s       
+contracted to 44879 vertices (85%) and 67190 edges in 0.00558221s                            
+......                                        
+created index of size 23 MB in 0.700361s using 23979 shortcuts                               
+#labels=5398605 (max 256), avg/max cut size=8.89/41, height=22                               
+partition tree contains 30516 non-empty cuts (67% of uncontracted vertices)                  
+3-HOP pruning could remove 2351236 labels (37%)                                              
+2-HOP pruning could remove 1818731 labels (29%)                                              
+tail pruning *has* removed 857011 labels (13%)                                               
+maximum memory used: 69 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Detroit/Detroit_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Detroit/Detroit_Edgelist.csv         
+largest component has 274807 nodes and 764728 edges                                          
+read 274807 urban vertices                    
+read 274807 vertices and 376272 edges (diameter=312|213209)                                  
+found 4699 redundant edges in 0.0906978s      
+contracted to 216482 vertices (78%) and 317947 edges in 0.0572848s                           
+............................................................................................ 
+created index of size 321 MB in 20.0908s using 173709 shortcuts                              
+#labels=80811546 (max 709), avg/max cut size=22.6/154, height=25                             
+partition tree contains 147209 non-empty cuts (68% of uncontracted vertices)                 
+3-HOP pruning could remove 38277339 labels (41%)                                             
+2-HOP pruning could remove 30419171 labels (33%)                                             
+tail pruning *has* removed 11209677 labels (12%)                                             
+maximum memory used: 917 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Dhaka/Dhaka_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Dhaka/Dhaka_Edgelist.csv             
+largest component has 14689 nodes and 39096 edges                                            
+read 14689 urban vertices                     
+read 14689 vertices and 19457 edges (diameter=132|74029)                                     
+found 133 redundant edges in 0.00456991s      
+contracted to 11041 vertices (75%) and 15809 edges in 0.00177518s                            
+.                                             
+created index of size 3 MB in 0.141659s using 5780 shortcuts                                 
+#labels=878133 (max 169), avg/max cut size=6.93/24, height=17                                
+partition tree contains 7653 non-empty cuts (69% of uncontracted vertices)                   
+3-HOP pruning could remove 331826 labels (32%)                                               
+2-HOP pruning could remove 252631 labels (24%)                                               
+tail pruning *has* removed 143283 labels (14%)                                               
+maximum memory used: 20 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Dongguan/Dongguan_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Dongguan/Dongguan_Edgelist.csv       
+largest component has 7658 nodes and 21164 edges                                             
+read 7658 urban vertices                      
+read 7658 vertices and 10542 edges (diameter=135|96432)                                      
+found 94 redundant edges in 0.00347211s       
+contracted to 6354 vertices (82%) and 9238 edges in 0.000598462s                             
+created index of size 1 MB in 0.0644655s using 3860 shortcuts                                
+#labels=418325 (max 126), avg/max cut size=6.22/17, height=16                                
+partition tree contains 4276 non-empty cuts (67% of uncontracted vertices)                   
+3-HOP pruning could remove 125817 labels (26%)                                               
+2-HOP pruning could remove 97575 labels (20%) 
+tail pruning *has* removed 56950 labels (11%) 
+maximum memory used: 13 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Fuzhou/Fuzhou_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Fuzhou/Fuzhou_Edgelist.csv           
+largest component has 10629 nodes and 29072 edges                                            
+read 10629 urban vertices                     
+read 10629 vertices and 14367 edges (diameter=128|237977)                                    
+found 245 redundant edges in 0.00481837s      
+contracted to 8309 vertices (78%) and 12047 edges in 0.00151114s                             
+created index of size 3 MB in 0.146545s using 5787 shortcuts                                 
+#labels=816619 (max 217), avg/max cut size=8.49/34, height=21                                
+partition tree contains 5745 non-empty cuts (69% of uncontracted vertices)                   
+3-HOP pruning could remove 297470 labels (32%)                                               
+2-HOP pruning could remove 219826 labels (23%)                                               
+tail pruning *has* removed 102843 labels (11%)                                               
+maximum memory used: 16 MB                    
+❌ CSV not found: /scratch1/zhou822/urban_road_sources/Guangzhou/Guangzhou_Edgelist.csv      
+Running on /scratch1/zhou822/urban_road_sources/Hangzhou/Hangzhou_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Hangzhou/Hangzhou_Edgelist.csv       
+largest component has 19911 nodes and 55930 edges                                            
+read 19911 urban vertices                     
+read 19911 vertices and 27607 edges (diameter=201|301017)                                    
+found 312 redundant edges in 0.0103196s       
+contracted to 16503 vertices (82%) and 24199 edges in 0.00259406s                            
+..                                            
+created index of size 9 MB in 0.330097s using 13381 shortcuts                                
+#labels=2185602 (max 287), avg/max cut size=10.8/42, height=20                               
+partition tree contains 10988 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 928255 labels (36%)                                               
+2-HOP pruning could remove 705594 labels (28%)                                               
+tail pruning *has* removed 333425 labels (13%)                                               
+maximum memory used: 28 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Harbin/Harbin_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Harbin/Harbin_Edgelist.csv           
+largest component has 10132 nodes and 28626 edges                                            
+read 10132 urban vertices                     
+read 10132 vertices and 14185 edges (diameter=162|517719)                                    
+found 173 redundant edges in 0.00511191s      
+contracted to 8406 vertices (82%) and 12459 edges in 0.00109326s                             
+created index of size 3 MB in 0.138916s using 5502 shortcuts                                 
+#labels=840583 (max 178), avg/max cut size=8.65/30, height=19                                
+partition tree contains 5710 non-empty cuts (67% of uncontracted vertices)                   
+3-HOP pruning could remove 357794 labels (36%)                                               
+2-HOP pruning could remove 282210 labels (28%)                                               
+tail pruning *has* removed 141987 labels (14%)                                               
+maximum memory used: 16 MB                    
+❌ CSV not found: /scratch1/zhou822/urban_road_sources/hcl_labels/hcl_labels_Edgelist.csv    
+Running on /scratch1/zhou822/urban_road_sources/HoChiMinh/HoChiMinh_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/HoChiMinh/HoChiMinh_Edgelist.csv     
+largest component has 75229 nodes and 205030 edges                                           
+read 75229 urban vertices                     
+read 75229 vertices and 102141 edges (diameter=332|311113)                                   
+found 721 redundant edges in 0.0245154s       
+contracted to 57921 vertices (76%) and 84833 edges in 0.0109761s                             
+.......                                       
+created index of size 28 MB in 1.03699s using 31782 shortcuts                                
+#labels=6658136 (max 340), avg/max cut size=8/48, height=24                                  
+partition tree contains 40534 non-empty cuts (69% of uncontracted vertices)                  
+3-HOP pruning could remove 2636223 labels (34%)                                              
+2-HOP pruning could remove 2030266 labels (26%)                                              
+tail pruning *has* removed 930346 labels (12%)                                               
+maximum memory used: 93 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Houston/Houston_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Houston/Houston_Edgelist.csv         
+largest component has 476078 nodes and 1251780 edges                                         
+read 476078 urban vertices                    
+read 476078 vertices and 615096 edges (diameter=724|329682)                                  
+found 7446 redundant edges in 0.146956s       
+contracted to 338776 vertices (71%) and 477794 edges in 0.131875s                            
+..................................................................................................................................................                                        
+created index of size 516 MB in 34.1328s using 254495 shortcuts                              
+#labels=129538557 (max 771), avg/max cut size=21.8/183, height=27                            
+partition tree contains 239969 non-empty cuts (70% of uncontracted vertices)                 
+3-HOP pruning could remove 58022152 labels (39%)                                             
+2-HOP pruning could remove 44864046 labels (30%)                                             
+tail pruning *has* removed 16384180 labels (11%)                                             
+maximum memory used: 1450 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Hyderabad/Hyderabad_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Hyderabad/Hyderabad_Edgelist.csv     
+largest component has 127455 nodes and 340792 edges                                          
+read 127455 urban vertices                    
+read 127455 vertices and 169520 edges (diameter=267|122017)                                  
+found 1779 redundant edges in 0.0433997s      
+contracted to 94378 vertices (74%) and 136443 edges in 0.0199424s                            
+..................                            
+created index of size 67 MB in 2.70242s using 54859 shortcuts                                
+#labels=16054140 (max 387), avg/max cut size=11.4/66, height=25                              
+partition tree contains 65790 non-empty cuts (69% of uncontracted vertices)                  
+3-HOP pruning could remove 7466543 labels (40%)                                              
+2-HOP pruning could remove 5817534 labels (31%)                                              
+tail pruning *has* removed 2499332 labels (13%)                                              
+maximum memory used: 148 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Istambul/Istambul_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Istambul/Istambul_Edgelist.csv       
+largest component has 131130 nodes and 380108 edges                                          
+read 131130 urban vertices                    
+read 131130 vertices and 188934 edges (diameter=345|176375)                                  
+found 1865 redundant edges in 0.0493065s      
+contracted to 113830 vertices (86%) and 171634 edges in 0.0176149s                           
+......................                        
+created index of size 81 MB in 2.59249s using 72271 shortcuts                                
+#labels=19534481 (max 361), avg/max cut size=11.3/55, height=25                              
+partition tree contains 74457 non-empty cuts (65% of uncontracted vertices)                  
+3-HOP pruning could remove 8375213 labels (37%)                                              
+2-HOP pruning could remove 6455670 labels (28%)                                              
+tail pruning *has* removed 2870871 labels (12%)                                              
+maximum memory used: 182 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Jacarta/Jacarta_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Jacarta/Jacarta_Edgelist.csv         
+largest component has 73003 nodes and 205626 edges                                           
+read 73003 urban vertices                     
+read 73003 vertices and 101763 edges (diameter=209|69081)                                    
+found 1236 redundant edges in 0.0317549s      
+contracted to 61014 vertices (83%) and 89774 edges in 0.00991228s                            
+...........                                   
+created index of size 39 MB in 1.66081s using 32368 shortcuts                                
+#labels=9519720 (max 304), avg/max cut size=10.7/44, height=23                               
+partition tree contains 42634 non-empty cuts (69% of uncontracted vertices)                  
+3-HOP pruning could remove 4558023 labels (40%)                                              
+2-HOP pruning could remove 3574144 labels (31%)                                              
+tail pruning *has* removed 1726752 labels (15%)                                              
+maximum memory used: 94 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Johannesburg/Johannesburg_Edgelist.csv       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Johannesburg/Johannesburg_Edgelist.csv                                                                                            
+largest component has 187127 nodes and 529580 edges                                          
+read 187127 urban vertices                    
+read 187127 vertices and 260532 edges (diameter=242|228814)                                  
+found 4087 redundant edges in 0.0635085s      
+contracted to 155536 vertices (83%) and 228941 edges in 0.0334145s                           
+.........................................     
+created index of size 147 MB in 7.449s using 113093 shortcuts                                
+#labels=36259538 (max 750), avg/max cut size=14.9/274, height=30                             
+partition tree contains 107320 non-empty cuts (69% of uncontracted vertices)                 
+3-HOP pruning could remove 16364550 labels (38%)                                             
+2-HOP pruning could remove 12653386 labels (30%)                                             
+tail pruning *has* removed 5723383 labels (13%)                                              
+maximum memory used: 361 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Karachi/Karachi_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Karachi/Karachi_Edgelist.csv         
+largest component has 37142 nodes and 110260 edges                                           
+read 37142 urban vertices                     
+read 37142 vertices and 54969 edges (diameter=118|109186)                                    
+found 291 redundant edges in 0.0151332s       
+contracted to 32918 vertices (88%) and 50745 edges in 0.00353761s                            
+....                                          
+created index of size 16 MB in 0.484633s using 18938 shortcuts                               
+#labels=3777103 (max 243), avg/max cut size=8.94/48, height=21                               
+partition tree contains 21494 non-empty cuts (65% of uncontracted vertices)                  
+3-HOP pruning could remove 1796138 labels (40%)                                              
+2-HOP pruning could remove 1356335 labels (30%)                                              
+tail pruning *has* removed 656276 labels (14%)                                               
+maximum memory used: 52 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Lahore/Lahore_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Lahore/Lahore_Edgelist.csv           
+largest component has 27390 nodes and 81618 edges                                            
+read 27390 urban vertices                     
+read 27390 vertices and 40617 edges (diameter=122|83869)                                     
+found 321 redundant edges in 0.0146587s       
+contracted to 24830 vertices (90%) and 38057 edges in 0.00226631s                            
+...                                           
+created index of size 14 MB in 0.440329s using 15386 shortcuts                               
+#labels=3348178 (max 224), avg/max cut size=10.8/51, height=19                               
+partition tree contains 16224 non-empty cuts (65% of uncontracted vertices)                  
+3-HOP pruning could remove 1594658 labels (41%)                                              
+2-HOP pruning could remove 1211045 labels (31%)                                              
+tail pruning *has* removed 538780 labels (13%)                                               
+maximum memory used: 39 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Lima/Lima_Edgelist.csv                       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Lima/Lima_Edgelist.csv               
+largest component has 110232 nodes and 336742 edges                                          
+read 110232 urban vertices                    
+read 110232 vertices and 167579 edges (diameter=332|119394)                                  
+found 566 redundant edges in 0.0385465s       
+contracted to 101040 vertices (91%) and 158387 edges in 0.0133132s                           
+.....................                         
+created index of size 74 MB in 2.745s using 70171 shortcuts                                  
+#labels=18080976 (max 600), avg/max cut size=12/214, height=24                               
+partition tree contains 64933 non-empty cuts (64% of uncontracted vertices)                  
+3-HOP pruning could remove 9333461 labels (43%)                                              
+2-HOP pruning could remove 7652611 labels (35%)                                              
+tail pruning *has* removed 3407277 labels (15%)                                              
+maximum memory used: 187 MB                   
+Running on /scratch1/zhou822/urban_road_sources/London/London_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/London/London_Edgelist.csv           
+largest component has 285050 nodes and 749382 edges                                          
+read 285050 urban vertices                    
+read 285050 vertices and 370079 edges (diameter=431|68462)                                   
+found 4996 redundant edges in 0.0925181s      
+contracted to 215577 vertices (75%) and 300606 edges in 0.0667082s                           
+...................................................................................................................                                                                       
+created index of size 394 MB in 30.4385s using 249082 shortcuts                              
+#labels=99956189 (max 1730), avg/max cut size=28.9/475, height=26                            
+partition tree contains 144430 non-empty cuts (66% of uncontracted vertices)                 
+3-HOP pruning could remove 58635223 labels (50%)                                             
+2-HOP pruning could remove 46632589 labels (40%)                                             
+tail pruning *has* removed 15141141 labels (13%)                                             
+maximum memory used: 1225 MB                  
+Running on /scratch1/zhou822/urban_road_sources/LosAngeles/LosAngeles_Edgelist.csv           
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/LosAngeles/LosAngeles_Edgelist.csv   
+largest component has 398609 nodes and 1090480 edges                                         
+read 398609 urban vertices                    
+read 398609 vertices and 539764 edges (diameter=488|230240)                                  
+found 5454 redundant edges in 0.145114s       
+contracted to 309233 vertices (77%) and 450388 edges in 0.144653s                            
+................................................................................................................................                                                          
+created index of size 448 MB in 26.9236s using 291048 shortcuts                              
+#labels=112303463 (max 1012), avg/max cut size=21.4/168, height=27                           
+partition tree contains 205160 non-empty cuts (66% of uncontracted vertices)                 
+3-HOP pruning could remove 50673981 labels (39%)                                             
+2-HOP pruning could remove 40041511 labels (31%)                                             
+tail pruning *has* removed 15474682 labels (12%)                                             
+maximum memory used: 1234 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Madrid/Madrid_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Madrid/Madrid_Edgelist.csv           
+largest component has 352759 nodes and 1014168 edges                                         
+read 352759 urban vertices                    
+read 352759 vertices and 501391 edges (diameter=377|283423)                                  
+found 6903 redundant edges in 0.192156s       
+contracted to 309137 vertices (87%) and 457769 edges in 0.0757726s                           
+........................................................................................................................................                                                  
+created index of size 477 MB in 33.1662s using 235886 shortcuts                              
+#labels=120193724 (max 782), avg/max cut size=23.3/119, height=28                            
+partition tree contains 204544 non-empty cuts (66% of uncontracted vertices)                 
+3-HOP pruning could remove 54679036 labels (40%)                                             
+2-HOP pruning could remove 42577347 labels (31%)                                             
+tail pruning *has* removed 15685794 labels (11%)                                             
+maximum memory used: 1362 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Manila/Manila_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Manila/Manila_Edgelist.csv           
+largest component has 241055 nodes and 654056 edges                                          
+read 241055 urban vertices                    
+read 241055 vertices and 323170 edges (diameter=655|207130)                                  
+found 4878 redundant edges in 0.0704024s      
+contracted to 191075 vertices (79%) and 273190 edges in 0.0518408s                           
+.......................                       
+created index of size 89 MB in 3.71852s using 76953 shortcuts                                
+#labels=20359112 (max 388), avg/max cut size=6.45/65, height=25                              
+partition tree contains 143971 non-empty cuts (75% of uncontracted vertices)                 
+3-HOP pruning could remove 6895888 labels (29%)                                              
+2-HOP pruning could remove 5305768 labels (22%)                                              
+tail pruning *has* removed 2835058 labels (12%)                                              
+maximum memory used: 286 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Medellin/Medellin_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Medellin/Medellin_Edgelist.csv       
+largest component has 22899 nodes and 65422 edges                                            
+read 22899 urban vertices                     
+read 22899 vertices and 32535 edges (diameter=165|62218)                                     
+found 156 redundant edges in 0.00789331s      
+contracted to 18670 vertices (81%) and 28306 edges in 0.00313877s                            
+..                                            
+created index of size 9 MB in 0.306768s using 12445 shortcuts                                
+#labels=2216164 (max 266), avg/max cut size=9.56/39, height=20                               
+partition tree contains 12356 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 930497 labels (36%)                                               
+2-HOP pruning could remove 750135 labels (29%)                                               
+tail pruning *has* removed 336201 labels (13%)                                               
+maximum memory used: 31 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Miami/Miami_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Miami/Miami_Edgelist.csv             
+largest component has 218937 nodes and 608152 edges                                          
+read 218937 urban vertices                    
+read 218937 vertices and 300107 edges (diameter=343|267574)                                  
+found 2929 redundant edges in 0.0742212s      
+contracted to 175993 vertices (80%) and 257163 edges in 0.0448287s                           
+...........................................   
+created index of size 156 MB in 6.82466s using 125272 shortcuts                              
+#labels=38260351 (max 509), avg/max cut size=13.4/115, height=25                             
+partition tree contains 122721 non-empty cuts (69% of uncontracted vertices)                 
+3-HOP pruning could remove 15182787 labels (34%)                                             
+2-HOP pruning could remove 11700725 labels (26%)                                             
+tail pruning *has* removed 5284259 labels (12%)                                              
+maximum memory used: 378 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Milan/Milan_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Milan/Milan_Edgelist.csv             
+largest component has 187537 nodes and 521100 edges                                          
+read 187537 urban vertices                    
+read 187537 vertices and 257308 edges (diameter=320|74848)                                   
+found 4077 redundant edges in 0.0700677s      
+contracted to 157243 vertices (83%) and 227014 edges in 0.0302734s                           
+......................................................                                       
+created index of size 195 MB in 8.77808s using 125820 shortcuts                              
+#labels=48708207 (max 661), avg/max cut size=20/94, height=25                                
+partition tree contains 107292 non-empty cuts (68% of uncontracted vertices)                 
+3-HOP pruning could remove 22078279 labels (40%)                                             
+2-HOP pruning could remove 16998718 labels (30%)                                             
+tail pruning *has* removed 6142421 labels (11%)                                              
+maximum memory used: 495 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Moscow/Moscow_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Moscow/Moscow_Edgelist.csv           
+largest component has 685091 nodes and 1868268 edges                                         
+read 685091 urban vertices                    
+read 685091 vertices and 924683 edges (diameter=570|382473)                                  
+found 13346 redundant edges in 0.301891s      
+contracted to 542413 vertices (79%) and 782005 edges in 0.184561s                            
+.................................................................................................................................................................................................................................................................................................................................................................................
+created index of size 1234 MB in 92.8983s using 620115 shortcuts                             
+#labels=314258430 (max 2129), avg/max cut size=32.8/590, height=32                           
+partition tree contains 365175 non-empty cuts (67% of uncontracted vertices)                 
+3-HOP pruning could remove 194885617 labels (53%)                                            
+2-HOP pruning could remove 156075506 labels (42%)                                            
+tail pruning *has* removed 53440461 labels (14%)                                             
+maximum memory used: 3907 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Mumbai/Mumbai_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Mumbai/Mumbai_Edgelist.csv           
+largest component has 44908 nodes and 120516 edges                                           
+read 44908 urban vertices                     
+read 44908 vertices and 59614 edges (diameter=325|97487)                                     
+found 918 redundant edges in 0.0139104s       
+contracted to 33775 vertices (75%) and 48481 edges in 0.00528841s                            
+...                                           
+created index of size 12 MB in 0.359198s using 15384 shortcuts                               
+#labels=2649368 (max 150), avg/max cut size=5.79/21, height=21                               
+partition tree contains 24230 non-empty cuts (71% of uncontracted vertices)                  
+3-HOP pruning could remove 888476 labels (29%)                                               
+2-HOP pruning could remove 722712 labels (23%)                                               
+tail pruning *has* removed 401196 labels (13%)                                               
+maximum memory used: 54 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Nanjing/Nanjing_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Nanjing/Nanjing_Edgelist.csv         
+largest component has 20230 nodes and 58638 edges                                            
+read 20230 urban vertices                     
+read 20230 vertices and 28607 edges (diameter=162|191764)                                    
+found 428 redundant edges in 0.00853598s      
+contracted to 17377 vertices (85%) and 25754 edges in 0.00207222s                            
+..                                            
+created index of size 9 MB in 0.307868s using 12988 shortcuts                                
+#labels=2225138 (max 248), avg/max cut size=10.6/38, height=18                               
+partition tree contains 11554 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 1019445 labels (39%)                                              
+2-HOP pruning could remove 792521 labels (30%)                                               
+tail pruning *has* removed 350286 labels (13%)                                               
+maximum memory used: 29 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Naples/Naples_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Naples/Naples_Edgelist.csv           
+largest component has 124591 nodes and 322508 edges                                          
+read 124591 urban vertices                    
+read 124591 vertices and 159161 edges (diameter=534|282102)                                  
+found 2039 redundant edges in 0.043006s       
+contracted to 93267 vertices (74%) and 127837 edges in 0.022417s                             
+..............                                
+created index of size 55 MB in 2.11811s using 50208 shortcuts                                
+#labels=13027263 (max 326), avg/max cut size=9/42, height=26                                 
+partition tree contains 67309 non-empty cuts (72% of uncontracted vertices)                  
+3-HOP pruning could remove 4497486 labels (30%)                                              
+2-HOP pruning could remove 3570134 labels (23%)                                              
+tail pruning *has* removed 1923234 labels (12%)                                              
+maximum memory used: 146 MB                   
+Running on /scratch1/zhou822/urban_road_sources/NewYork/NewYork_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/NewYork/NewYork_Edgelist.csv         
+largest component has 334930 nodes and 914390 edges                                          
+read 334930 urban vertices                    
+read 334930 vertices and 445933 edges (diameter=708|235884)                                  
+found 5274 redundant edges in 0.106307s       
+contracted to 257746 vertices (76%) and 368749 edges in 0.074686s                            
+..........................................................                                   
+created index of size 211 MB in 7.86667s using 170963 shortcuts                              
+#labels=51189095 (max 558), avg/max cut size=11.9/83, height=26                              
+partition tree contains 178903 non-empty cuts (69% of uncontracted vertices)                 
+3-HOP pruning could remove 19843691 labels (34%)                                             
+2-HOP pruning could remove 15597539 labels (26%)                                             
+tail pruning *has* removed 7090189 labels (12%)                                              
+maximum memory used: 477 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Paris/Paris_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Paris/Paris_Edgelist.csv             
+largest component has 461542 nodes and 1272526 edges                                         
+read 461542 urban vertices                    
+read 461542 vertices and 629501 edges (diameter=278|114252)                                  
+found 9147 redundant edges in 0.262019s       
+contracted to 377096 vertices (81%) and 545055 edges in 0.118371s                            
+...............................................................................................................................................................................................................................................................................................
+created index of size 1000 MB in 74.2943s using 494580 shortcuts                             
+#labels=255979665 (max 1592), avg/max cut size=40.8/295, height=29                           
+partition tree contains 243545 non-empty cuts (64% of uncontracted vertices)                 
+3-HOP pruning could remove 133705403 labels (46%)                                            
+2-HOP pruning could remove 104832557 labels (36%)                                            
+tail pruning *has* removed 30452784 labels (10%)                                             
+maximum memory used: 3115 MB                  
+Running on /scratch1/zhou822/urban_road_sources/Philadelphia/Philadelphia_Edgelist.csv       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Philadelphia/Philadelphia_Edgelist.csv                                                                                            
+largest component has 281463 nodes and 778306 edges                                          
+read 281463 urban vertices                    
+read 281463 vertices and 382587 edges (diameter=425|190762)                                  
+found 4600 redundant edges in 0.0890871s      
+contracted to 222133 vertices (78%) and 323257 edges in 0.0576962s                           
+.....................................................................................        
+created index of size 305 MB in 18.517s using 181614 shortcuts                               
+#labels=76508810 (max 986), avg/max cut size=21.4/175, height=28                             
+partition tree contains 150727 non-empty cuts (67% of uncontracted vertices)                 
+3-HOP pruning could remove 34963586 labels (40%)                                             
+2-HOP pruning could remove 27411467 labels (31%)                                             
+tail pruning *has* removed 9357504 labels (10%)                                              
+maximum memory used: 829 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Phoenix/Phoenix_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Phoenix/Phoenix_Edgelist.csv         
+largest component has 340613 nodes and 918634 edges                                          
+read 340613 urban vertices                    
+read 340613 vertices and 454450 edges (diameter=350|371565)                                  
+found 4627 redundant edges in 0.125217s       
+contracted to 278744 vertices (81%) and 392581 edges in 0.080715s                            
+..........................................................................................................                                                                                
+created index of size 365 MB in 19.6259s using 248690 shortcuts                              
+#labels=91104591 (max 960), avg/max cut size=19.8/239, height=26                             
+partition tree contains 194701 non-empty cuts (69% of uncontracted vertices)                 
+3-HOP pruning could remove 47712697 labels (45%)                                             
+2-HOP pruning could remove 37801493 labels (35%)                                             
+tail pruning *has* removed 14686597 labels (13%)                                             
+maximum memory used: 912 MB                   
+Running on /scratch1/zhou822/urban_road_sources/PortoAlegre/PortoAlegre_Edgelist.csv         
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/PortoAlegre/PortoAlegre_Edgelist.csv 
+largest component has 63751 nodes and 186466 edges                                           
+read 63751 urban vertices                     
+read 63751 vertices and 92925 edges (diameter=313|93276)                                     
+found 546 redundant edges in 0.0191029s       
+contracted to 54568 vertices (85%) and 83742 edges in 0.00836023s                            
+.......                                       
+created index of size 28 MB in 0.906678s using 30739 shortcuts                               
+#labels=6755582 (max 258), avg/max cut size=8.91/39, height=21                               
+partition tree contains 36265 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 2516316 labels (32%)                                              
+2-HOP pruning could remove 1942127 labels (25%)                                              
+tail pruning *has* removed 889138 labels (11%)                                               
+maximum memory used: 83 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Pune/Pune_Edgelist.csv                       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Pune/Pune_Edgelist.csv               
+largest component has 27815 nodes and 72406 edges                                            
+read 27815 urban vertices                     
+read 27815 vertices and 35935 edges (diameter=170|165485)                                    
+found 213 redundant edges in 0.00991866s      
+contracted to 20576 vertices (73%) and 28696 edges in 0.00371098s                            
+..                                            
+created index of size 8 MB in 0.258655s using 9871 shortcuts                                 
+#labels=1939793 (max 179), avg/max cut size=7.42/28, height=19                               
+partition tree contains 14995 non-empty cuts (72% of uncontracted vertices)                  
+3-HOP pruning could remove 782876 labels (34%)                                               
+2-HOP pruning could remove 601935 labels (26%)                                               
+tail pruning *has* removed 332395 labels (14%)                                               
+maximum memory used: 35 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Qingdao/Qingdao_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Qingdao/Qingdao_Edgelist.csv         
+largest component has 13235 nodes and 37704 edges                                            
+read 13235 urban vertices                     
+read 13235 vertices and 18518 edges (diameter=183|223226)                                    
+found 114 redundant edges in 0.00531604s      
+contracted to 10741 vertices (81%) and 16024 edges in 0.00146314s                            
+created index of size 3 MB in 0.11077s using 6589 shortcuts                                  
+#labels=750526 (max 135), avg/max cut size=6.04/29, height=18                                
+partition tree contains 7239 non-empty cuts (67% of uncontracted vertices)                   
+3-HOP pruning could remove 280323 labels (31%)                                               
+2-HOP pruning could remove 228514 labels (25%)                                               
+tail pruning *has* removed 145800 labels (16%)                                               
+maximum memory used: 19 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Quanzhou/Quanzhou_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Quanzhou/Quanzhou_Edgelist.csv       
+largest component has 5164 nodes and 14564 edges                                             
+read 5164 urban vertices                      
+read 5164 vertices and 7235 edges (diameter=125|233470)                                      
+found 83 redundant edges in 0.00336323s       
+contracted to 4341 vertices (84%) and 6412 edges in 0.000471962s                             
+created index of size 1 MB in 0.050461s using 2507 shortcuts                                 
+#labels=261915 (max 135), avg/max cut size=5.9/21, height=16                                 
+partition tree contains 3011 non-empty cuts (69% of uncontracted vertices)                   
+3-HOP pruning could remove 84160 labels (28%) 
+2-HOP pruning could remove 65509 labels (22%) 
+tail pruning *has* removed 34422 labels (11%) 
+maximum memory used: 10 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Recife/Recife_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Recife/Recife_Edgelist.csv           
+largest component has 33295 nodes and 94844 edges                                            
+read 33295 urban vertices                     
+read 33295 vertices and 47225 edges (diameter=327|51756)                                     
+found 214 redundant edges in 0.00886815s      
+contracted to 28303 vertices (85%) and 42233 edges in 0.00362369s                            
+..                                            
+created index of size 10 MB in 0.320761s using 14396 shortcuts                               
+#labels=2407681 (max 161), avg/max cut size=6.56/27, height=20                               
+partition tree contains 19328 non-empty cuts (68% of uncontracted vertices)                  
+3-HOP pruning could remove 846673 labels (30%)                                               
+2-HOP pruning could remove 667033 labels (24%)                                               
+tail pruning *has* removed 352387 labels (12%)                                               
+maximum memory used: 45 MB                    
+Running on /scratch1/zhou822/urban_road_sources/RiodeJaneiro/RiodeJaneiro_Edgelist.csv       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/RiodeJaneiro/RiodeJaneiro_Edgelist.csv                                                                                            
+largest component has 155666 nodes and 436618 edges                                          
+read 155666 urban vertices                    
+read 155666 vertices and 217033 edges (diameter=574|179733)                                  
+found 1580 redundant edges in 0.0527042s      
+contracted to 126328 vertices (81%) and 187695 edges in 0.0354937s                           
+..................                            
+created index of size 68 MB in 2.48436s using 68519 shortcuts                                
+#labels=16043898 (max 301), avg/max cut size=8.2/52, height=24                               
+partition tree contains 86839 non-empty cuts (68% of uncontracted vertices)                  
+3-HOP pruning could remove 6140837 labels (33%)                                              
+2-HOP pruning could remove 4884407 labels (26%)                                              
+tail pruning *has* removed 2370290 labels (12%)                                              
+maximum memory used: 192 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Rome/Rome_Edgelist.csv                       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Rome/Rome_Edgelist.csv               
+largest component has 158546 nodes and 424900 edges                                          
+read 158546 urban vertices                    
+read 158546 vertices and 209321 edges (diameter=453|172474)                                  
+found 3608 redundant edges in 0.0550741s      
+contracted to 122120 vertices (77%) and 172895 edges in 0.0321327s                           
+...................................           
+created index of size 121 MB in 6.8457s using 83456 shortcuts                                
+#labels=29957948 (max 535), avg/max cut size=15.6/71, height=23                              
+partition tree contains 86074 non-empty cuts (70% of uncontracted vertices)                  
+3-HOP pruning could remove 14826889 labels (42%)                                             
+2-HOP pruning could remove 11839025 labels (33%)                                             
+tail pruning *has* removed 5111679 labels (14%)                                              
+maximum memory used: 292 MB                   
+Running on /scratch1/zhou822/urban_road_sources/SaintPetersburg/SaintPetersburg_Edgelist.csv 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/SaintPetersburg/SaintPetersburg_Edgelist.csv                                                                                      
+largest component has 363070 nodes and 988180 edges                                          
+read 363070 urban vertices                    
+read 363070 vertices and 489750 edges (diameter=632|332972)                                  
+found 5462 redundant edges in 0.155453s       
+contracted to 284921 vertices (78%) and 411601 edges in 0.0846294s                           
+.............................................................................                
+created index of size 276 MB in 12.071s using 188299 shortcuts                               
+#labels=67793829 (max 592), avg/max cut size=14.1/91, height=26                              
+partition tree contains 197392 non-empty cuts (69% of uncontracted vertices)                 
+3-HOP pruning could remove 30950565 labels (39%)                                             
+2-HOP pruning could remove 24325180 labels (31%)                                             
+tail pruning *has* removed 9748293 labels (12%)                                              
+maximum memory used: 695 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Salvador/Salvador_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Salvador/Salvador_Edgelist.csv       
+largest component has 31650 nodes and 84618 edges                                            
+read 31650 urban vertices                     
+read 31650 vertices and 41940 edges (diameter=174|69268)                                     
+found 539 redundant edges in 0.00940323s      
+contracted to 24094 vertices (76%) and 34384 edges in 0.00453383s                            
+..                                            
+created index of size 8 MB in 0.280272s using 11286 shortcuts                                
+#labels=1776014 (max 205), avg/max cut size=5.62/48, height=21                               
+partition tree contains 17365 non-empty cuts (72% of uncontracted vertices)                  
+3-HOP pruning could remove 584806 labels (28%)                                               
+2-HOP pruning could remove 465677 labels (22%)                                               
+tail pruning *has* removed 279146 labels (13%)                                               
+maximum memory used: 40 MB                    
+Running on /scratch1/zhou822/urban_road_sources/SanFrancisco/SanFrancisco_Edgelist.csv       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/SanFrancisco/SanFrancisco_Edgelist.csv                                                                                            
+largest component has 348712 nodes and 946174 edges                                          
+read 348712 urban vertices                    
+read 348712 vertices and 466695 edges (diameter=463|349850)                                  
+found 7031 redundant edges in 0.12927s        
+contracted to 269072 vertices (77%) and 387055 edges in 0.080264s                            
+..................................................................                           
+created index of size 236 MB in 9.40998s using 190758 shortcuts                              
+#labels=57623977 (max 517), avg/max cut size=12.8/74, height=26                              
+partition tree contains 186626 non-empty cuts (69% of uncontracted vertices)                 
+3-HOP pruning could remove 23725091 labels (35%)                                             
+2-HOP pruning could remove 18787754 labels (28%)                                             
+tail pruning *has* removed 8533555 labels (12%)                                              
+maximum memory used: 554 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Santiago/Santiago_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Santiago/Santiago_Edgelist.csv       
+largest component has 141505 nodes and 412480 edges                                          
+read 141505 urban vertices                    
+read 141505 vertices and 204123 edges (diameter=277|211030)                                  
+found 1273 redundant edges in 0.053619s       
+contracted to 119418 vertices (84%) and 182036 edges in 0.0206618s                           
+.....................................         
+created index of size 133 MB in 5.3809s using 81877 shortcuts                                
+#labels=33038488 (max 485), avg/max cut size=18.4/70, height=26                              
+partition tree contains 78532 non-empty cuts (65% of uncontracted vertices)                  
+3-HOP pruning could remove 15163831 labels (40%)                                             
+2-HOP pruning could remove 11845444 labels (31%)                                             
+tail pruning *has* removed 4324037 labels (11%)                                              
+maximum memory used: 344 MB                   
+Running on /scratch1/zhou822/urban_road_sources/SaoPaolo/SaoPaolo_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/SaoPaolo/SaoPaolo_Edgelist.csv       
+largest component has 212540 nodes and 618894 edges                                          
+read 212540 urban vertices                    
+read 212540 vertices and 307952 edges (diameter=278|122212)                                  
+found 2446 redundant edges in 0.0866144s      
+contracted to 186169 vertices (87%) and 281581 edges in 0.0393311s                           
+.........................................................................                    
+created index of size 259 MB in 12.7145s using 156523 shortcuts                              
+#labels=65241139 (max 753), avg/max cut size=22.3/113, height=24                             
+partition tree contains 120469 non-empty cuts (64% of uncontracted vertices)                 
+3-HOP pruning could remove 30083389 labels (40%)                                             
+2-HOP pruning could remove 23313483 labels (31%)                                             
+tail pruning *has* removed 8247509 labels (11%)                                              
+maximum memory used: 690 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Seoul/Seoul_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Seoul/Seoul_Edgelist.csv             
+largest component has 101982 nodes and 299392 edges                                          
+read 101982 urban vertices                    
+read 101982 vertices and 148262 edges (diameter=225|173026)                                  
+found 1885 redundant edges in 0.0459153s      
+contracted to 89346 vertices (87%) and 135626 edges in 0.0186288s                            
+..........................                    
+created index of size 92 MB in 3.8313s using 77410 shortcuts                                 
+#labels=22924373 (max 589), avg/max cut size=17.9/131, height=23                             
+partition tree contains 57351 non-empty cuts (64% of uncontracted vertices)                  
+3-HOP pruning could remove 11030553 labels (41%)                                             
+2-HOP pruning could remove 8886993 labels (33%)                                              
+tail pruning *has* removed 3507692 labels (13%)                                              
+maximum memory used: 213 MB                   
+❌ CSV not found: /scratch1/zhou822/urban_road_sources/Shanghai/Shanghai_Edgelist.csv        
+Running on /scratch1/zhou822/urban_road_sources/Shenyang/Shenyang_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Shenyang/Shenyang_Edgelist.csv       
+largest component has 12751 nodes and 37868 edges                                            
+read 12751 urban vertices                     
+read 12751 vertices and 18797 edges (diameter=117|239833)                                    
+found 285 redundant edges in 0.00720809s      
+contracted to 11382 vertices (89%) and 17428 edges in 0.00122718s                            
+.                                             
+created index of size 6 MB in 0.223098s using 8807 shortcuts                                 
+#labels=1476729 (max 218), avg/max cut size=11.5/38, height=21                               
+partition tree contains 7363 non-empty cuts (64% of uncontracted vertices)                   
+3-HOP pruning could remove 717382 labels (41%)                                               
+2-HOP pruning could remove 546387 labels (31%)                                               
+tail pruning *has* removed 254617 labels (14%)                                               
+maximum memory used: 20 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Shenzhen/Shenzhen_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Shenzhen/Shenzhen_Edgelist.csv       
+largest component has 34201 nodes and 96546 edges                                            
+read 34201 urban vertices                     
+read 34201 vertices and 47764 edges (diameter=190|110470)                                    
+found 693 redundant edges in 0.0156884s       
+contracted to 27990 vertices (81%) and 41553 edges in 0.00365894s                            
+....                                          
+created index of size 14 MB in 0.442379s using 19749 shortcuts                               
+#labels=3429164 (max 246), avg/max cut size=9.53/33, height=21                               
+partition tree contains 18746 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 1429680 labels (35%)                                              
+2-HOP pruning could remove 1143067 labels (28%)                                              
+tail pruning *has* removed 652765 labels (15%)                                               
+maximum memory used: 46 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Surabaya/Surabaya_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Surabaya/Surabaya_Edgelist.csv       
+largest component has 36140 nodes and 97220 edges                                            
+read 36140 urban vertices                     
+read 36140 vertices and 48326 edges (diameter=165|99979)                                     
+found 385 redundant edges in 0.011036s        
+contracted to 28602 vertices (79%) and 40788 edges in 0.00447337s                            
+...                                           
+created index of size 11 MB in 0.348352s using 12246 shortcuts                               
+#labels=2653950 (max 156), avg/max cut size=7.03/35, height=20                               
+partition tree contains 21017 non-empty cuts (73% of uncontracted vertices)                  
+3-HOP pruning could remove 1129558 labels (36%)                                              
+2-HOP pruning could remove 886383 labels (28%)                                               
+tail pruning *has* removed 416789 labels (13%)                                               
+maximum memory used: 46 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Surat/Surat_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Surat/Surat_Edgelist.csv             
+largest component has 2508 nodes and 7236 edges                                              
+read 2508 urban vertices                      
+read 2508 vertices and 3591 edges (diameter=71|50689)                                        
+found 37 redundant edges in 0.00074213s       
+contracted to 2148 vertices (85%) and 3231 edges in 0.000160835s                             
+created index of size 0 MB in 0.0252146s using 921 shortcuts                                 
+#labels=94337 (max 66), avg/max cut size=5.03/17, height=14                                  
+partition tree contains 1459 non-empty cuts (67% of uncontracted vertices)                   
+3-HOP pruning could remove 36871 labels (33%) 
+2-HOP pruning could remove 28972 labels (26%) 
+tail pruning *has* removed 17077 labels (15%) 
+maximum memory used: 6 MB                     
+Running on /scratch1/zhou822/urban_road_sources/Suzhou/Suzhou_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Suzhou/Suzhou_Edgelist.csv           
+largest component has 43705 nodes and 119606 edges                                           
+read 43705 urban vertices                     
+read 43705 vertices and 59454 edges (diameter=257|180077)                                    
+found 475 redundant edges in 0.0166301s       
+contracted to 37783 vertices (86%) and 53532 edges in 0.00563862s                            
+......                                        
+created index of size 25 MB in 0.839957s using 31467 shortcuts                               
+#labels=6189081 (max 339), avg/max cut size=12.3/73, height=21                               
+partition tree contains 25298 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 2384411 labels (34%)                                              
+2-HOP pruning could remove 1842496 labels (26%)                                              
+tail pruning *has* removed 783656 labels (11%)                                               
+maximum memory used: 66 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Taipei/Taipei_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Taipei/Taipei_Edgelist.csv           
+largest component has 121808 nodes and 347660 edges                                          
+read 121808 urban vertices                    
+read 121808 vertices and 172422 edges (diameter=254|256587)                                  
+found 2139 redundant edges in 0.0670523s      
+contracted to 99958 vertices (82%) and 150572 edges in 0.0215061s                            
+...........................                   
+created index of size 96 MB in 4.00761s using 92520 shortcuts                                
+#labels=23841480 (max 594), avg/max cut size=16.2/77, height=24                              
+partition tree contains 64430 non-empty cuts (64% of uncontracted vertices)                  
+3-HOP pruning could remove 10134861 labels (37%)                                             
+2-HOP pruning could remove 7947378 labels (29%)                                              
+tail pruning *has* removed 3429656 labels (12%)                                              
+maximum memory used: 215 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Tehran/Tehran_Edgelist.csv                   
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Tehran/Tehran_Edgelist.csv           
+largest component has 108096 nodes and 290476 edges                                          
+read 108096 urban vertices                    
+read 108096 vertices and 144720 edges (diameter=293|307787)                                  
+found 910 redundant edges in 0.0467802s       
+contracted to 83073 vertices (76%) and 119697 edges in 0.0160541s                            
+.......................                       
+created index of size 80 MB in 3.42453s using 66499 shortcuts                                
+#labels=19907960 (max 609), avg/max cut size=16.5/137, height=25                             
+partition tree contains 55396 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 9920010 labels (42%)                                              
+2-HOP pruning could remove 7629722 labels (32%)                                              
+tail pruning *has* removed 3306196 labels (14%)                                              
+maximum memory used: 214 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Tianjin/Tianjin_Edgelist.csv                 
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Tianjin/Tianjin_Edgelist.csv         
+largest component has 31002 nodes and 85404 edges                                            
+read 31002 urban vertices                     
+read 31002 vertices and 42507 edges (diameter=186|217042)                                    
+found 386 redundant edges in 0.0137646s       
+contracted to 25839 vertices (83%) and 37344 edges in 0.00357111s                            
+....                                          
+created index of size 16 MB in 0.443662s using 20337 shortcuts                               
+#labels=3908650 (max 255), avg/max cut size=12/45, height=21                                 
+partition tree contains 17305 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 1696625 labels (38%)                                              
+2-HOP pruning could remove 1206368 labels (27%)                                              
+tail pruning *has* removed 497428 labels (11%)                                               
+maximum memory used: 42 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Tokyo/Tokyo_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Tokyo/Tokyo_Edgelist.csv             
+largest component has 345185 nodes and 1014300 edges                                         
+read 345185 urban vertices                    
+read 345185 vertices and 504302 edges (diameter=485|113604)                                  
+found 6191 redundant edges in 0.192842s       
+contracted to 307192 vertices (88%) and 466309 edges in 0.0781673s                           
+.......................................................................................................................................................                                   
+created index of size 531 MB in 35.6162s using 269443 shortcuts                              
+#labels=134368573 (max 1152), avg/max cut size=26.9/127, height=33                           
+partition tree contains 191630 non-empty cuts (62% of uncontracted vertices)                 
+3-HOP pruning could remove 62633468 labels (41%)                                             
+2-HOP pruning could remove 51232174 labels (33%)                                             
+tail pruning *has* removed 16994998 labels (11%)                                             
+maximum memory used: 1590 MB                  
+Running on /scratch1/zhou822/urban_road_sources/WashingtonDC/WashingtonDC_Edgelist.csv       
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/WashingtonDC/WashingtonDC_Edgelist.csv                                                                                            
+largest component has 486658 nodes and 1262000 edges                                         
+read 486658 urban vertices                    
+read 486658 vertices and 610458 edges (diameter=681|237191)                                  
+found 9568 redundant edges in 0.171172s       
+contracted to 312269 vertices (64%) and 436069 edges in 0.175397s                            
+..........................................................................................   
+created index of size 320 MB in 16.1611s using 206868 shortcuts                              
+#labels=78414687 (max 581), avg/max cut size=13.8/101, height=29                             
+partition tree contains 227171 non-empty cuts (72% of uncontracted vertices)                 
+3-HOP pruning could remove 32230130 labels (35%)                                             
+2-HOP pruning could remove 25829694 labels (28%)                                             
+tail pruning *has* removed 11647728 labels (12%)                                             
+maximum memory used: 787 MB                   
+Running on /scratch1/zhou822/urban_road_sources/Wuhan/Wuhan_Edgelist.csv                     
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Wuhan/Wuhan_Edgelist.csv             
+largest component has 21061 nodes and 59664 edges                                            
+read 21061 urban vertices                     
+read 21061 vertices and 29536 edges (diameter=143|167237)                                    
+found 396 redundant edges in 0.00962574s      
+contracted to 17970 vertices (85%) and 26445 edges in 0.00302631s                            
+..                                            
+created index of size 9 MB in 0.323092s using 14247 shortcuts                                
+#labels=2240539 (max 240), avg/max cut size=10.4/39, height=18                               
+partition tree contains 11996 non-empty cuts (66% of uncontracted vertices)                  
+3-HOP pruning could remove 898405 labels (35%)                                               
+2-HOP pruning could remove 703929 labels (27%)                                               
+tail pruning *has* removed 289326 labels (11%)                                               
+maximum memory used: 30 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Xianyang/Xianyang_Edgelist.csv               
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Xianyang/Xianyang_Edgelist.csv       
+largest component has 26023 nodes and 73074 edges                                            
+read 26023 urban vertices                     
+read 26023 vertices and 36141 edges (diameter=199|280635)                                    
+found 430 redundant edges in 0.0104444s       
+contracted to 21969 vertices (84%) and 32087 edges in 0.00485133s                            
+....                                          
+created index of size 15 MB in 0.546209s using 17639 shortcuts                               
+#labels=3798453 (max 317), avg/max cut size=14/58, height=19                                 
+partition tree contains 14456 non-empty cuts (65% of uncontracted vertices)                  
+3-HOP pruning could remove 1631474 labels (38%)                                              
+2-HOP pruning could remove 1236010 labels (29%)                                              
+tail pruning *has* removed 462791 labels (10%)                                               
+maximum memory used: 37 MB                    
+Running on /scratch1/zhou822/urban_road_sources/Zhengzhou/Zhengzhou_Edgelist.csv             
+shortcuts enabled                             
+pruning enabled                               
+path contraction disabled                     
+multi-threading enabled                       
+threads supported by hardware: 192            
+
+reading graph from /scratch1/zhou822/urban_road_sources/Zhengzhou/Zhengzhou_Edgelist.csv     
+largest component has 8986 nodes and 25466 edges                                             
+read 8986 urban vertices                      
+read 8986 vertices and 12679 edges (diameter=114|169801)                                     
+found 102 redundant edges in 0.00365632s      
+contracted to 7754 vertices (86%) and 11447 edges in 0.00094034s                             
+created index of size 3 MB in 0.151715s using 5764 shortcuts                                 
+#labels=850513 (max 234), avg/max cut size=10.2/40, height=17                                
+partition tree contains 5118 non-empty cuts (66% of uncontracted vertices)                   
+3-HOP pruning could remove 393914 labels (39%)                                               
+2-HOP pruning could remove 296280 labels (30%)                                               
+tail pruning *has* removed 134843 labels (13%)                                               
+maximum memory used: 15 MB                    
+bigdata1 52 $                                         

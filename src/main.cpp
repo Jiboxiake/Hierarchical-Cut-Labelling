@@ -6,12 +6,14 @@
 #include <fstream>
 #include <thread>
 #include <sys/resource.h>
-
+#include <filesystem>
 using namespace std;
 using namespace road_network;
 
 #define REMOVE_REDUNDANT
 #define CONTRACT
+#define USING_URBAN_ROADS false
+#define OUTPUT_LABEL
 
 const size_t repeats = 1;
 const size_t nr_queries = 1000000;
@@ -177,7 +179,11 @@ int main(int argc, char *argv[])
             cout << endl << "reading graph from " << filename << endl;
             fstream fs(filename);
             Graph g;
+#if USING_URBAN_ROADS
+            read_urban_graph(g, fs);
+#else
             read_graph(g, fs);
+#endif
             fs.close();
             cout << "read " << g.node_count() << " vertices and " << g.edge_count() << " edges" << flush;
             distance_t diameter = g.diameter(true);
@@ -249,7 +255,88 @@ int main(int argc, char *argv[])
             rusage usage;
             if (getrusage(RUSAGE_SELF, &usage) != -1)
                 cout << "maximum memory used: " << usage.ru_maxrss / 1024 << " MB" << endl;
+            
+            //output the labels
+#ifdef OUTPUT_LABEL
+       #if URBAN_ROADS
+             // Extract last directory name from filename
+        std::filesystem::path input_path(filename);
+        std::string last_dir;
+        if (input_path.has_parent_path()) {
+            last_dir = input_path.parent_path().filename().string();
+        } else {
+            last_dir = input_path.filename().string();
+        }
+        std::cout << "last directory name: " << last_dir << std::endl;
+        // Construct new label file path
+        std::filesystem::path label_dir = "/scratch1/zhou822/urban_road_sources/hcl_labels";
+        std::filesystem::create_directories(label_dir); // Ensure directory exists
+        std::string label_name = (label_dir / (last_dir + "-label.hl")).string();
 
+        // Remove if exists
+        const std::filesystem::path filePath = label_name;
+        if(std::filesystem::exists(filePath)){
+            if(std::filesystem::remove(filePath)){
+                std::cout<<"remove old label file"<<std::endl;
+            }else{
+                std::cerr<<"fail to remove the old file"<<std::endl;
+            }
+        }else{
+            std::cout<<"creating new label file "<<label_name<<std::endl;
+        }
+        std::ofstream label_file(label_name, std::ios::out);
+        if (!label_file.is_open()) {
+            std::cerr << "Failed to open label file for writing: " << label_name << std::endl;
+            return 1;
+        }
+        con_index.write_json_v2(label_file);
+        label_file.close();
+        return 0;
+        #else
+        std::string label_name(filename);
+            label_name.append("-label.hl");
+            //remove if exist
+            const std::filesystem::path filePath = label_name;
+            
+            if(std::filesystem::exists(filePath)){
+                if(std::filesystem::remove(filePath)){
+                    std::cout<<"remove old label file"<<std::endl;
+                }else{
+                    std::cerr<<"fail to remove the old file"<<std::endl;
+                }
+            }else{
+                std::cout<<"creating new label file "<<label_name<<std::endl;
+            }
+            std::ofstream  label_file;
+            label_file.open(label_name,ios::out | ios::app);
+            con_index.write_json_v2(label_file);
+            label_file.close();
+            return 0;
+        #endif
+/*
+            std::string label_name(filename);
+            label_name.append("-label.hl");
+            //remove if exist
+            const std::filesystem::path filePath = label_name;
+            
+            if(std::filesystem::exists(filePath)){
+                if(std::filesystem::remove(filePath)){
+                    std::cout<<"remove old label file"<<std::endl;
+                }else{
+                    std::cerr<<"fail to remove the old file"<<std::endl;
+                }
+            }else{
+                std::cout<<"creating new label file "<<label_name<<std::endl;
+            }
+            std::ofstream  label_file;
+            label_file.open(label_name,ios::out | ios::app);
+            con_index.write_json_v2(label_file);
+            label_file.close();
+            return 0;
+*/
+#endif
+            //con_index.print_some(11);
+            return 0;
             // test query speed
             vector<pair<NodeID,NodeID>> queries;
             for (size_t i = 0; i < nr_queries; i++)
