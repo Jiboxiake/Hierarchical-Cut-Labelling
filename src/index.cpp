@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
+#include <filesystem>
 using namespace std;
 using namespace road_network;
 
@@ -35,11 +36,65 @@ void preprocess_json(std::string filename,std::string output_name){
     //con_index.write_json_v2(index_file);
     //index_file.close();
 }
+
+void compute_ground_truth(std::string graph_path, std::string query_path,std::string output_name){
+    Graph g;
+    cout << endl << "reading graph from " << graph_path << endl;
+    fstream fs(graph_path.c_str());
+    read_dense_graph(g, fs);
+    fs.close();
+    cout << "read " << g.node_count() << " vertices and " << g.edge_count() << " edges" << flush;
+    vector<Neighbor> closest;
+    g.contract(closest);
+#ifdef NDEBUG
+    srand(time(nullptr));
+    g.randomize();
+#endif
+    // construct index
+    vector<CutIndex> ci;
+    g.create_cut_index(ci, 0.2);
+    ContractionIndex con_index(ci, closest);
+    
+    // read queries
+    ifstream query_file(query_path);
+    if (!query_file.is_open()) {
+        cerr << "Failed to open query file: " << query_path << endl;
+        return;
+    }
+    if(std::filesystem::exists(output_name)){
+        if(std::filesystem::remove(output_name)){
+            std::cout<<"remove old ground truth file"<<std::endl;
+        }else{
+            std::cerr<<"fail to remove the old file"<<std::endl;
+        }
+    }
+    std::ofstream output_file(output_name);
+    if (!output_file.is_open()) {
+        cerr << "Failed to open output file: " << output_name << endl;
+        return;
+    }
+    
+    NodeID v, w;
+    std::string line;
+    while (std::getline(query_file, line)) {
+        v = std::stoi(line.substr(0, line.find(',')));
+        w =  std::stoi(line.substr(line.find(',') + 1));
+        distance_t dist = con_index.get_distance(v, w);
+        output_file << v << "," << w << "," << dist << std::endl;
+    }
+    
+    query_file.close();
+    output_file.close();
+}
+
 int main(int argc, char** argv)
 {
     std::cout<<"run index"<<std::endl;
+    compute_ground_truth("/scratch1/zhou822/Beijing_Cleaned/adjacency_list.txt",
+        "/scratch1/zhou822/Beijing_Cleaned/queries.txt",
+        "/scratch1/zhou822/Beijing_Cleaned/ground_truth.txt");
     return 0;
-    bool json = false;
+    /*bool json = false;
     if (argc > 1)
     {
         if (strcmp(argv[1], "-json") == 0)
@@ -55,7 +110,7 @@ int main(int argc, char** argv)
         std::string filename="/scratch1/zhou822/road_source/USA-road-d.NY.gr";
         std::string outputname ="NY_Label_json.hl";
         preprocess_json(filename,outputname);
-    }
+    }*/
     // read graph
 /*
     Graph g;

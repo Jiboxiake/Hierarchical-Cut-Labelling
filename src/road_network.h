@@ -463,5 +463,7 @@ void print_graph(const Graph &g, std::ostream &os);
 void read_graph(Graph &g, std::istream &in);
 // read urban road network graph
 void read_urban_graph(Graph &g, std::istream &in);
+// read preprocessed dense graph
+void read_dense_graph(Graph &g, std::istream &in);
 
 } // road_network

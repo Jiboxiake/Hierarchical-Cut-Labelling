@@ -3122,6 +3122,42 @@ void read_urban_graph(Graph &g, istream &in)
     g.remove_isolated();
 }
 
+void read_dense_graph(Graph &g, istream &in)
+{
+    std::string line;
+    uint32_t v, w, d;
+    std::getline(in, line);//skip the first line
+    std::vector<uint32_t> vs;
+    std::vector<uint32_t> ws;
+    std::vector<uint32_t> ds;
+    while (std::getline(in, line)) {
+        //std::cout<<line<<std::endl;
+        std::istringstream ss(line);
+        std::string startNode, endNode, edge, length;
+        if (!std::getline(ss, startNode, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, endNode, ',')) throw std::runtime_error("error, input format");
+        if (!std::getline(ss, length, ',')) throw std::runtime_error("error, input format");
+        v = (NodeID)std::stoi(startNode);
+        w = (NodeID)std::stoi(endNode);
+        d = (distance_t)std::stoi(length);
+        if(d==0)d=1;
+        //g.add_edge(v, w, d, true, true);
+        vs.emplace_back(v);
+        ws.emplace_back(w);
+        ds.emplace_back(d);
+    }
+    g.resize(*max_element(vs.begin(),vs.end()));
+    if(vs.size()!=ws.size()||ds.size()!=ws.size()){
+        throw std::runtime_error("error, wrong input");
+    }
+    for(size_t i=0; i<vs.size();i++){
+        v = vs[i];
+        w = ws[i];
+        d = ds[i];
+        g.add_edge(v, w, d, true, true);
+    }
+}
+
 //--------------------------- ostream -------------------------------
 
 // for easy distance printing

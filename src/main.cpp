@@ -13,7 +13,7 @@ using namespace road_network;
 #define REMOVE_REDUNDANT
 #define CONTRACT
 #define USING_URBAN_ROADS false
-#define OUTPUT_LABEL
+//#define OUTPUT_LABEL
 
 const size_t repeats = 1;
 const size_t nr_queries = 1000000;
