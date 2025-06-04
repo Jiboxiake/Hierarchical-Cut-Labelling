@@ -3122,7 +3122,7 @@ void read_urban_graph(Graph &g, istream &in)
     g.remove_isolated();
 }
 
-void read_dense_graph(Graph &g, istream &in)
+void read_dense_graph(Graph &g, istream &in, bool bi_source_graph)
 {
     std::string line;
     uint32_t v, w, d;
@@ -3134,9 +3134,15 @@ void read_dense_graph(Graph &g, istream &in)
         //std::cout<<line<<std::endl;
         std::istringstream ss(line);
         std::string startNode, endNode, edge, length;
-        if (!std::getline(ss, startNode, ',')) throw std::runtime_error("error, input format");
-        if (!std::getline(ss, endNode, ',')) throw std::runtime_error("error, input format");
-        if (!std::getline(ss, length, ',')) throw std::runtime_error("error, input format");
+        if(bi_source_graph){
+            if (!std::getline(ss, startNode, ',')) throw std::runtime_error("error, input format");
+            if (!std::getline(ss, endNode, ',')) throw std::runtime_error("error, input format");
+            if (!std::getline(ss, length, ',')) throw std::runtime_error("error, input format");
+        }else{
+            if (!std::getline(ss, startNode, ' ')) throw std::runtime_error("error, input format");
+            if (!std::getline(ss, endNode, ' ')) throw std::runtime_error("error, input format");
+            if (!std::getline(ss, length, ' ')) throw std::runtime_error("error, input format");
+        }
         v = (NodeID)std::stoi(startNode);
         w = (NodeID)std::stoi(endNode);
         d = (distance_t)std::stoi(length);
@@ -3146,9 +3152,13 @@ void read_dense_graph(Graph &g, istream &in)
         ws.emplace_back(w);
         ds.emplace_back(d);
     }
-    g.resize(*max_element(vs.begin(),vs.end()));
-    if(vs.size()!=ws.size()||ds.size()!=ws.size()){
-        throw std::runtime_error("error, wrong input");
+    auto max_vid = max(*max_element(vs.begin(), vs.end()), *max_element(ws.begin(), ws.end()));
+    std::cout << "max vertex id: " << max_vid << std::endl;
+    g.resize(max_vid);
+    if(bi_source_graph){
+        if(vs.size()!=ws.size()||ds.size()!=ws.size()){
+            throw std::runtime_error("error, wrong input");
+        }
     }
     for(size_t i=0; i<vs.size();i++){
         v = vs[i];

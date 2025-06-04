@@ -41,9 +41,9 @@ void compute_ground_truth(std::string graph_path, std::string query_path,std::st
     Graph g;
     cout << endl << "reading graph from " << graph_path << endl;
     fstream fs(graph_path.c_str());
-    read_dense_graph(g, fs);
+    read_dense_graph(g, fs,true);
     fs.close();
-    cout << "read " << g.node_count() << " vertices and " << g.edge_count() << " edges" << flush;
+    cout << "read " << g.node_count() << " vertices and " << g.edge_count() << " edges" << std::endl;
     vector<Neighbor> closest;
     g.contract(closest);
 #ifdef NDEBUG
@@ -54,7 +54,7 @@ void compute_ground_truth(std::string graph_path, std::string query_path,std::st
     vector<CutIndex> ci;
     g.create_cut_index(ci, 0.2);
     ContractionIndex con_index(ci, closest);
-    
+    std::cout<<"index build"<<std::endl;
     // read queries
     ifstream query_file(query_path);
     if (!query_file.is_open()) {
@@ -90,9 +90,9 @@ void compute_ground_truth(std::string graph_path, std::string query_path,std::st
 int main(int argc, char** argv)
 {
     std::cout<<"run index"<<std::endl;
-    compute_ground_truth("/scratch1/zhou822/Beijing_Cleaned/adjacency_list.txt",
-        "/scratch1/zhou822/Beijing_Cleaned/queries.txt",
-        "/scratch1/zhou822/Beijing_Cleaned/ground_truth.txt");
+    //compute_ground_truth("/scratch1/zhou822/Beijing_Cleaned/adjacency_list.txt","/scratch1/zhou822/Beijing_Cleaned/queries.txt","/scratch1/zhou822/Beijing_Cleaned/ground_truth.txt");
+    //for new york
+    compute_ground_truth("/scratch1/zhou822/NewYork_v1/NewYork.edgelist","/scratch1/zhou822/NewYork_v1/NewYork.queries","/scratch1/zhou822/NewYork_v1/NewYork.groundtruth");
     return 0;
     /*bool json = false;
     if (argc > 1)
