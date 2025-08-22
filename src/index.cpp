@@ -81,6 +81,13 @@ void preprocess_gilbreth(std::string graph_path,std::string output_name){
     cout << "created index of size " << result.index_size << " MB in " << result.index_time << "s" << endl;
     // write index
     //json ? con_index.write_json(std::cout) : con_index.write(std::cout);
+    if(std::filesystem::exists(output_name)){
+        if(std::filesystem::remove(output_name)){
+            std::cout<<"remove old index ile"<<std::endl;
+        }else{
+            std::cerr<<"fail to remove the old file"<<std::endl;
+        }
+    }
     ofstream index_file;
     index_file.open (output_name, ios::out | ios::app );
     //con_index.write_json(index_file);
